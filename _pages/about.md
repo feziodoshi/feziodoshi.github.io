@@ -20,10 +20,4 @@ Link to [paper](https://www.biorxiv.org/content/10.1101/2022.09.06.506403v2) and
 
 
 ### Talk on perceptual signatures of contour integration:
-<iframe
-    src="https://www.youtube.com/watch?v=PsmZAMGeV6A"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+{% include youtubePlayer.html id="PsmZAMGeV6A" %}
