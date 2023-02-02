@@ -23,7 +23,7 @@ Link to [paper](https://www.biorxiv.org/content/10.1101/2022.09.06.506403v2) and
 <iframe
     width="640"
     height="480"
-    src="https://www.youtube.com/embed/UmX4kyB2wfg"
+    src="https://www.youtube.com/watch?v=PsmZAMGeV6A"
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
