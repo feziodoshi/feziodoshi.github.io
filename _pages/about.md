@@ -10,7 +10,7 @@ redirect_from:
 
 Hi! I am a PhD student in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#) in the [Vision Sciences Lab](https://visionlab.harvard.edu) and [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu/#). I am broadly interested in how the human mind transforms visual sensory information into meaningful percepts of our world.
 
-In my research, I am exploring the nature of visual representations underlying mid-level vision by trying to characterize the tuning and spatial topographies of proto-object representations, and the kinds of mechanisms that lead to these representations. To this end, I combine computational models of vision, behavioral psychophysics, and neuroimaging data to gain deeper insights into the emergent neural and behavioral signatures of a hierarchical visual processor.
+My research program focuses on understanding the nature of visual representations underlying mid-level vision. Specifically, I am exploring the tuning and spatial topographies of proto-object representations, as well as the mechanisms that lead to the emergence of these representations. To achieve these goals, I use a multidisciplinary approach that combines computational models of vision, primarily deep neural networks, behavioral psychophysics, and neuroimaging data. By integrating these techniques, I aim to gain deeper insights into the emergent behavioral and neural signatures of mid-level computations underlying biological vision.
 
 
 ### Check out my work on modeling cortical topographies:
