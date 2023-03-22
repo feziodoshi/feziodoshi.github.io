@@ -19,5 +19,5 @@ Link to [paper](https://www.biorxiv.org/content/10.1101/2022.09.06.506403v3) and
 <img src="https://feziodoshi.github.io/images/cover_cortical_topographies.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 
-### Talk on perceptual signatures of contour integration:
+### Talk on perceptual signatures of contour integration (Presented at VSS 2022):
 {% include youtubePlayer.html id="PsmZAMGeV6A" %}
