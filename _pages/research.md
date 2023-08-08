@@ -35,7 +35,7 @@ Human-like signatures of contour integration in deep neural networks
 
 
 
-## 3) Does human vision directly leverage perceptual features as optimal proxies for intuitive physical reasoning?
+## 3) Perceptual features as optimal proxies for intuitive physical reasoning:
 
 Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 * Conwell, C., Doshi, F., Alvarez, G.A.(2019). *Shared Representations of Stability in Humans, Supervised, & Unsupervised Neural Networks. In Shared Visual Representations in Human and Machine Intelligence*. SVRHM workshop at NeurIPS 2019. [pdf](https://feziodoshi.github.io/files/neurips_2019_svrhm.pdf)
@@ -46,7 +46,7 @@ Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvar
 <!-- {% include image_yolo.html url="https://feziodoshi.github.io/images/transformations_2.gif" description="Interpolations in pixel space vs the latent space of an adversarial variational autoencoder" %} -->
 <img src="https://feziodoshi.github.io/images/transformations_2.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 
-## 4) What representations explain capacity limits in visual working memory?
+## 4) Capacity limits in visual working memory:
 Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F., Pailian, H., & Alvarez, G. A. (2020). *Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.[link](https://jov.arvojournals.org/article.aspx?articleid=2771225)
