@@ -11,8 +11,10 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 
 * Doshi, F. R., & Konkle, T. (2023). *Cortical topographic motifs emerge in a self-organized map of object space.* Science Advances, 9(25), eade8187. [link to paper](https://www.science.org/doi/10.1126/sciadv.ade8187)
 
+* Doshi, F. R., & Konkle, T. (2023). *Face-deprived networks show distributed but not clustered face-selective maps.*.  Journal of Vision, 23(9), 5435-5435. [link](https://jov.arvojournals.org/article.aspx?articleid=2791966) 
+
 * Doshi, F., & Konkle, T. (2021). *Organizational motifs of cortical responses to objects emerge in topographic projections of deep neural networks*. Journal of Vision, 21(9), 2226-2226. [link](https://jov.arvojournals.org/article.aspx?articleid=2777459) 
-<br />[talk at the Vision Sciences Society 2021 Conference](https://www.youtube.com/watch?v=zZvrIuoxU6Y)
+<br />[Talk presented at the Vision Sciences Society 2021 Conference](https://www.youtube.com/watch?v=zZvrIuoxU6Y)
 <img src="https://feziodoshi.github.io/images/research_topography_0.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 <div style="display: flex;">
 <img src="https://feziodoshi.github.io/images/research_topography_1.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
@@ -22,8 +24,10 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 ## 2) Mechanisms of Contour Integration in Humans and Machines: 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-Human-like signatures of contour integration in deep neural networks
-* Doshi, F., Konkle, T., & Alvarez, G.A. (2021). *Human-like signatures of contour integration in deep neural networks*. Talk presented at the Vision Sciences Society 2022 Conference
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). *Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023. [pdf](https://2023.ccneuro.org/proceedings/0000361.pdf)
+
+* Doshi, F., Konkle, T., & Alvarez, G.A. (2021). *Human-like signatures of contour integration in deep neural networks*. [link](https://jov.arvojournals.org/article.aspx?articleid=2784827) 
+<br />[Talk presented at the Vision Sciences Society 2022 Conference](https://www.youtube.com/watch?v=PsmZAMGeV6A)
 <!-- 
 <img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:100%;"/>
 <img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height:60%;display: block;margin-left: auto;margin-right: auto"/> -->
