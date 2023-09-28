@@ -26,7 +26,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). *Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023. [pdf](https://2023.ccneuro.org/proceedings/0000361.pdf)
 
-* Doshi, F., Konkle, T., & Alvarez, G.A. (2021). *Human-like signatures of contour integration in deep neural networks*. [link](https://jov.arvojournals.org/article.aspx?articleid=2784827) 
+* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). *Human-like signatures of contour integration in deep neural networks*. [link](https://jov.arvojournals.org/article.aspx?articleid=2784827) 
 <br />[Talk presented at the Vision Sciences Society 2022 Conference](https://www.youtube.com/watch?v=PsmZAMGeV6A)
 <!-- 
 <img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:100%;"/>
