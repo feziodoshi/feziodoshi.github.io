@@ -18,6 +18,6 @@ Link to [paper](https://www.science.org/doi/10.1126/sciadv.ade8187) and [tweet-t
 <img src="https://feziodoshi.github.io/images/cover_cortical_topographies.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 
-### Talk on Perceptual signatures of contour integration 
+### Here is my talk on Perceptual signatures of contour integration in humans and deep neural networks 
 Presented at Vision Sciences Society 2022
 {% include youtubePlayer.html id="PsmZAMGeV6A" %}
