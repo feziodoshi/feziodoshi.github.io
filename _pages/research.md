@@ -54,9 +54,6 @@ Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvar
 ## 4) Capacity limits in visual working memory:
 Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-* Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225)
+* Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Poster walkthrough presented at Vision Sciences Society 2020 Conference:](https://www.youtube.com/watch?v=TLvh2EuWP4s)
 
 Also check out Hrag's talk [here](https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo)!
-
-### Poster walkthrough presented at Vision Sciences Society 2020 Conference:
-{% include youtubePlayer.html id="TLvh2EuWP4s" %}
