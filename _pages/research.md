@@ -24,12 +24,11 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 ## 2) Mechanisms of Contour Integration in Humans and Machines: 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). *A feedforward mechanism for human-like contour integration.* Paper In Prep, 2024. [link](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v1)
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). *A feedforward mechanism for human-like contour integration.* Paper In Prep, 2024. [link to paper](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v1)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). *Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023. [pdf](https://2023.ccneuro.org/proceedings/0000361.pdf)
 
-* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). *Human-like signatures of contour integration in deep neural networks*. [link](https://jov.arvojournals.org/article.aspx?articleid=2784827) 
-<br />[Talk presented at the Vision Sciences Society 2022 Conference](https://www.youtube.com/watch?v=PsmZAMGeV6A)
+* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). *Human-like signatures of contour integration in deep neural networks*. [link](https://jov.arvojournals.org/article.aspx?articleid=2784827) [Talk presented at the Vision Sciences Society 2022 Conference](https://www.youtube.com/watch?v=PsmZAMGeV6A)
 <!-- 
 <img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:100%;"/>
 <img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height:60%;display: block;margin-left: auto;margin-right: auto"/> -->
