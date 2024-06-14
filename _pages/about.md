@@ -20,6 +20,9 @@ Link to [paper](https://www.science.org/doi/10.1126/sciadv.ade8187) and [tweet-t
 ### Here's some work on computational mechanims underlying mid-level object perception
 Link to [paper](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v1)
 
+<img src="https://feziodoshi.github.io/images/cover_contour_integration_dnns.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
+
+
 ### Talk on perceptual signatures of contour integration in humans and deep neural networks 
 Presented at Vision Sciences Society 2022
 {% include youtubePlayer.html id="PsmZAMGeV6A" %}
