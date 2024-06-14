@@ -38,7 +38,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 <img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height: auto;flex: 33.33%;padding: 5px;"/>
 </div> -->
 
-<img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
+<img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
 
 
