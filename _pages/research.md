@@ -14,6 +14,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 * Doshi, F. R., & Konkle, T. (2023). [*Face-deprived networks show distributed but not clustered face-selective maps.*  Journal of Vision, 23(9), 5435-5435.](https://jov.arvojournals.org/article.aspx?articleid=2791966) 
 
 * Doshi, F., & Konkle, T. (2021). [*Organizational motifs of cortical responses to objects emerge in topographic projections of deep neural networks*. Journal of Vision, 21(9), 2226-2226.](https://jov.arvojournals.org/article.aspx?articleid=2777459) <br />[Link to talk](https://www.youtube.com/watch?v=zZvrIuoxU6Y) presented at the Vision Sciences Society 2021 Conference
+
 <img src="https://feziodoshi.github.io/images/research_topography_0.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 <div style="display: flex;">
 <img src="https://feziodoshi.github.io/images/research_topography_1.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
@@ -57,6 +58,6 @@ Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvar
 ## 4) Capacity limits in visual working memory:
 Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-* Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Poster walkthrough presented at Vision Sciences Society 2020 Conference:](https://www.youtube.com/watch?v=TLvh2EuWP4s)
+* Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Link to poster walkthrough](https://www.youtube.com/watch?v=TLvh2EuWP4s) presented at Vision Sciences Society 2020 Conference
 
 Also check out Hrag's talk [here](https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo)!

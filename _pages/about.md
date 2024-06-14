@@ -22,7 +22,10 @@ Link to [paper](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v1)
 
 <img src="https://feziodoshi.github.io/images/cover_contour_integration_dnns.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
+### Talk on a topographic model of the human visual system using self-organizing constraints
+[Link to talk](https://www.youtube.com/watch?v=zZvrIuoxU6Y)
 
 ### Talk on perceptual signatures of contour integration in humans and deep neural networks 
 Presented at Vision Sciences Society 2022
 {% include youtubePlayer.html id="PsmZAMGeV6A" %}
+
