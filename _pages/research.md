@@ -72,5 +72,5 @@ Gupta, R., Pooniwala, R., Branda, J., Tsibris, A., Kuritzkes, D., Petrozza, J., 
 Shafiee H. (2021). [*Adaptive adversarial neural networks for the analysis of lossy and domainshifted datasets of medical images. In Nature Biomedical Engineering, 2021.*](https://www.nature.com/articles/s41551-021-00733-w)
 
 * Thirumalaraju, P., Bormann, CL., Kanakasabapathy, M., Doshi, F., Souter, I., Dimitriadis, I.,
-Shafiee, H.(2018).[*Automated sperm morpshology testing using artificial intelligence. In Fertility and sterility, 2018](https://www.fertstert.org/article/S0015-0282(18)31848-X/fulltext)
+Shafiee, H.(2018).[*Automated sperm morpshology testing using artificial intelligence. In Fertility and sterility, 2018*](https://www.fertstert.org/article/S0015-0282(18)31848-X/fulltext)
 
