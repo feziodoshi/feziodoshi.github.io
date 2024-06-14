@@ -27,15 +27,18 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). [*Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023.](https://2023.ccneuro.org/proceedings/0000361.pdf)
 
-* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). [*Human-like signatures of contour integration in deep neural networks*.](https://jov.arvojournals.org/article.aspx?articleid=2784827) <br />[Talk presented at the Vision Sciences Society 2022 Conference](https://www.youtube.com/watch?v=PsmZAMGeV6A)
+* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). [*Human-like signatures of contour integration in deep neural networks*.](https://jov.arvojournals.org/article.aspx?articleid=2784827) <br />[Talk](https://www.youtube.com/watch?v=PsmZAMGeV6A) presented at the Vision Sciences Society 2022 Conference
+
 <!-- 
 <img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:100%;"/>
 <img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height:60%;display: block;margin-left: auto;margin-right: auto"/> -->
 
-<div style="display: flex;">
+<!-- <div style="display: flex;">
 <img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:60%;height: auto;flex: 33.33%;padding: 5px;"/>
 <img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height: auto;flex: 33.33%;padding: 5px;"/>
-</div>
+</div> -->
+
+<img src="https://feziodoshi.github.io/images/contour_integration_results.gif" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 
 
 
