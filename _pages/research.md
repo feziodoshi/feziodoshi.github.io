@@ -41,9 +41,15 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 <img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
+## 3) Mid-level Shape Perception in Deep Neural Networks
 
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
 
-## 3) Perceptual features as optimal proxies for intuitive physical reasoning:
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://feziodoshi.github.io/files/vss_24.pdf)
+
+<img src="https://feziodoshi.github.io/images/configural_shape.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
+
+## 4) Perceptual features as optimal proxies for intuitive physical reasoning:
 
 Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
@@ -55,7 +61,7 @@ Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvar
 <!-- {% include image_yolo.html url="https://feziodoshi.github.io/images/transformations_2.gif" description="Interpolations in pixel space vs the latent space of an adversarial variational autoencoder" %} -->
 <img src="https://feziodoshi.github.io/images/transformations_2.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 
-## 4) Capacity limits in visual working memory:
+## 5) Capacity limits in visual working memory:
 Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Link to poster walkthrough](https://www.youtube.com/watch?v=TLvh2EuWP4s) presented at Vision Sciences Society 2020 Conference
@@ -63,7 +69,7 @@ Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](
 Also check out Hrag's talk [here](https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo)!
 
 
-## 5) Previous work:
+## 6) Previous work:
 
 * Liu, Yc., Wu, H., Mayeshiba, T. et al. (2022). [Machine learning predictions of irradiation embrittlement in reactor pressure vessel steels. In NPJ Computational Materials, 2022.](https://www.nature.com/articles/s41524-022-00760-4)
 
