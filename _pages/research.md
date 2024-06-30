@@ -47,7 +47,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://feziodoshi.github.io/files/vss_24.pdf)
 
-<img src="https://feziodoshi.github.io/images/configural_shape.png" alt="drawing" style="width:70%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
+<img src="https://feziodoshi.github.io/images/configural_shape.png" alt="drawing" style="width:90%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
 ## 4) Perceptual features as optimal proxies for intuitive physical reasoning:
 
