@@ -20,7 +20,7 @@ Link to [paper](https://www.science.org/doi/10.1126/sciadv.ade8187) and [tweet-t
 <img src="https://feziodoshi.github.io/images/cover_cortical_topographies.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 ### Here's some recent work on computational mechanims underlying mid-level object perception
-Link to [preprint](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v1)
+Link to [preprint](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v2)
 
 <img src="https://feziodoshi.github.io/images/cover_contour_integration_dnns.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
