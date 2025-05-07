@@ -45,7 +45,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 <img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
-## 3) Configural Shape Perception in Deep Neural Networks
+## 3) Holistic Shape Perception in Deep Neural Networks
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
