@@ -48,7 +48,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 ## 3) Holistic Shape Perception in Deep Neural Networks
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025).[*Disentangling Local and Global Processing in Deep Neural Networks*](https://feziodoshi.github.io/files/vss_25.pdf)
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks*](https://feziodoshi.github.io/files/vss_25.pdf)
 
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
