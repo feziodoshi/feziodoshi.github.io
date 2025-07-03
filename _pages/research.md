@@ -6,7 +6,23 @@ author_profile: true
 redirect_from:
   - /publications
 ---
-## 1) A computational account of topography in the occipitotemporal cortex via domain-general pressures: 
+
+## 1) Holistic Processing and Shape Perception in Deep Neural Networks
+Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
+Project page: [Link](https://www.fenildoshi.com/configural-shape/)
+
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models*](https://arxiv.org/abs/2507.00493)
+
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks*](https://feziodoshi.github.io/files/vss_25.pdf)
+
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
+
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://feziodoshi.github.io/files/vss_24.pdf)
+
+<img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:90%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
+
+
+## 2) A computational account of topography in the occipitotemporal cortex via domain-general pressures: 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 
 * Doshi, F. R., & Konkle, T. (2023). [*Cortical topographic motifs emerge in a self-organized map of object space.* Science Advances, 9(25), eade8187.](https://www.science.org/doi/10.1126/sciadv.ade8187)
@@ -23,7 +39,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
 <img src="https://feziodoshi.github.io/images/research_topography_2.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
 </div>
 
-## 2) Mechanisms of Contour Integration in Humans and Machines: 
+## 3) Mechanisms of Contour Integration in Humans and Machines: 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*A feedforward mechanism for human-like contour integration.* Biorxiv, 2024.](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v2)
@@ -44,18 +60,6 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 </div> -->
 
 <img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
-
-## 3) Holistic Shape Perception in Deep Neural Networks
-Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
-
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks*](https://feziodoshi.github.io/files/vss_25.pdf)
-
-
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
-
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://feziodoshi.github.io/files/vss_24.pdf)
-
-<img src="https://feziodoshi.github.io/images/configural_shape.png" alt="drawing" style="width:90%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
 ## 4) Perceptual features as optimal proxies for intuitive physical reasoning:
 
