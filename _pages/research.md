@@ -10,7 +10,7 @@ redirect_from:
 ## 1) Holistic Processing and Shape Perception in Vision Models
 
 Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
-Project page: [Link](https://www.fenildoshi.com/configural-shape/)
+Project page: [Link](https://www.fenildoshi.com/configural-shape/)\
 Tweet Thread: [Link](https://x.com/fenildoshi009/status/1940465973544603822?s=61)
 
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models*](https://arxiv.org/abs/2507.00493)
