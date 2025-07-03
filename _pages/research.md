@@ -7,9 +7,11 @@ redirect_from:
   - /publications
 ---
 
-## 1) Holistic Processing and Shape Perception in Deep Neural Networks
+## 1) Holistic Processing and Shape Perception in Vision Models
+
 Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
 Project page: [Link](https://www.fenildoshi.com/configural-shape/)
+Tweet Thread: [Link](https://x.com/fenildoshi009/status/1940465973544603822?s=61)
 
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models*](https://arxiv.org/abs/2507.00493)
 
@@ -23,7 +25,8 @@ Project page: [Link](https://www.fenildoshi.com/configural-shape/)
 
 
 ## 2) A computational account of topography in the occipitotemporal cortex via domain-general pressures: 
-Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)
+Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)\
+Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/1567956934971768832?s=20&t=Dno1tBXnH3oVA13gnZeoRw)
 
 * Doshi, F. R., & Konkle, T. (2023). [*Cortical topographic motifs emerge in a self-organized map of object space.* Science Advances, 9(25), eade8187.](https://www.science.org/doi/10.1126/sciadv.ade8187)
 
