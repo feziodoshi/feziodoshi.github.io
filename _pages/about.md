@@ -13,7 +13,7 @@ I am broadly interested in how the human mind transforms visual sensory informat
 
 To achieve these goals, I use a multidisciplinary approach that combines computational models of vision, primarily Deep Neural Networks, with behavioral psychophysics and neuroimaging data. By integrating these techniques, I aim to gain deeper insights into the emergent behavioral and neural signatures of mid-level computations that underlie biological vision. Here's a [brief walkthrough](https://gsas.harvard.edu/news/seeing-how-we-see) about my ongoing research, and you can learn more about my background and previous work on the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
 
-### Check out our recent work on probing holistic shape processing in vision models
+### Check out our recent work on holistic processing and shape perception in vision models
 Link to [paper](https://arxiv.org/abs/2507.00493), [project page](https://www.fenildoshi.com/configural-shape/), and [tweet-thread](https://x.com/fenildoshi009/status/1940465973544603822?s=61)
 
 <img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
