@@ -15,11 +15,15 @@ Tweet Thread: [Link](https://x.com/fenildoshi009/status/1940465973544603822?s=61
 
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models*](https://arxiv.org/abs/2507.00493)
 
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks*](https://feziodoshi.github.io/files/vss_25.pdf)
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks*](https://jov.arvojournals.org/article.aspx?articleid=2809981)
+<!-- https://feziodoshi.github.io/files/vss_25.pdf -->
+
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
 
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://feziodoshi.github.io/files/vss_24.pdf)
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* In Vision Science Society, 2024](https://jov.arvojournals.org/article.aspx?articleid=2801825)
+<!-- https://feziodoshi.github.io/files/vss_24.pdf -->
+
 
 <img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
