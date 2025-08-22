@@ -49,7 +49,9 @@ Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/156795693497176883
 ## 3) Mechanisms of Contour Integration in Humans and Machines: 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*A feedforward mechanism for human-like contour integration.* Biorxiv, 2024.](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v2)
+* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*A feedforward mechanism for human-like contour integration.* Biorxiv, 2024.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013391)
+
+<!-- * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*A feedforward mechanism for human-like contour integration.* Biorxiv, 2024.](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v2) -->
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). [*Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023.](https://2023.ccneuro.org/proceedings/0000361.pdf)
 
