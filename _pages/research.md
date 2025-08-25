@@ -52,7 +52,8 @@ Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/156795693497176883
 </div>
 
 ## 3) Mechanisms of Contour Integration in Humans and Machines
-Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
+Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
+Tweet Thread: [Link](https://x.com/fenildoshi009/status/1960040583961223229?s=61)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2025). [*A feedforward mechanism for human-like contour integration.* PLOS Computational Biology, 2025.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013391)
 
