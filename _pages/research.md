@@ -7,6 +7,11 @@ redirect_from:
   - /publications
 ---
 
+{: .no_toc}
+
+* TOC
+{:toc}
+
 ## 1) Holistic Processing and Shape Perception in Vision Models
 
 Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
