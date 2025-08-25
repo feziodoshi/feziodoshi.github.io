@@ -33,7 +33,7 @@ Tweet Thread: [Link](https://x.com/fenildoshi009/status/1940465973544603822?s=61
 <img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 
-## 2) A computational account of topography in the occipitotemporal cortex via domain-general pressures: 
+## 2) A computational account of topography in the occipitotemporal cortex via domain-general pressures 
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)\
 Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/1567956934971768832?s=20&t=Dno1tBXnH3oVA13gnZeoRw)
 
@@ -51,7 +51,7 @@ Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/156795693497176883
 <img src="https://feziodoshi.github.io/images/research_topography_2.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
 </div>
 
-## 3) Mechanisms of Contour Integration in Humans and Machines: 
+## 3) Mechanisms of Contour Integration in Humans and Machines
 Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2025). [*A feedforward mechanism for human-like contour integration.* PLOS Computational Biology, 2025.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013391)
@@ -75,7 +75,7 @@ Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvar
 
 <img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
 
-## 4) Perceptual features as optimal proxies for intuitive physical reasoning:
+## 4) Perceptual features as optimal proxies for intuitive physical reasoning
 
 Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
@@ -87,7 +87,8 @@ Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvar
 <!-- {% include image_yolo.html url="https://feziodoshi.github.io/images/transformations_2.gif" description="Interpolations in pixel space vs the latent space of an adversarial variational autoencoder" %} -->
 <img src="https://feziodoshi.github.io/images/transformations_2.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
 
-## 5) Capacity limits in visual working memory:
+## 5) Capacity limits in visual working memory
+
 Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
 
 * Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Link to poster walkthrough](https://www.youtube.com/watch?v=TLvh2EuWP4s)
@@ -95,7 +96,7 @@ Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](
 Also check out Hrag's talk [here](https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo)!
 
 
-## 6) Previous work:
+## 6) Previous work
 
 * Liu, Yc., Wu, H., Mayeshiba, T. et al. (2022). [Machine learning predictions of irradiation embrittlement in reactor pressure vessel steels. In NPJ Computational Materials, 2022.](https://www.nature.com/articles/s41524-022-00760-4)
 
