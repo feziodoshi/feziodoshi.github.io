@@ -16,13 +16,13 @@ Specifically, I am exploring the tuning and spatial topographies of proto-object
 To achieve these goals, I use a multidisciplinary approach that combines computational models of vision, primarily deep neural networks, with behavioral psychophysics and neuroimaging data. By integrating these techniques, I aim to gain deeper insights into the emergent mechanistic signatures of mid-level computations that underlie biological and machine vision. Here's a [brief walkthrough](https://gsas.harvard.edu/news/seeing-how-we-see) about my ongoing research, and you can learn more about my background and previous work on the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
 
 ### Here is our recent work on holistic processing and shape perception in vision models
-Link to [paper](https://arxiv.org/abs/2507.00493) (NeurIPS 2025), [project page](https://www.fenildoshi.com/configural-shape/), and [tweet-thread](https://x.com/fenildoshi009/status/1940465973544603822?s=61)
+Link to [paper](https://arxiv.org/abs/2507.00493) (NeurIPS 2025), [project page](https://www.fenildoshi.com/configural-shape/), and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
 
 <img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 
 ### Check out our work on modeling cortical topographies
-Link to [paper](https://www.science.org/doi/10.1126/sciadv.ade8187) (Science Advances 2023) and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
+Link to [paper](https://www.science.org/doi/10.1126/sciadv.ade8187) (Science Advances 2023) and [tweet-thread](https://x.com/fenildoshi009/status/1567956934971768832)
 
 <img src="https://feziodoshi.github.io/images/cover_cortical_topographies.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
