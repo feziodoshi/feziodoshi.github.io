@@ -16,9 +16,9 @@ redirect_from:
 
 Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
 Project page: [Link](https://www.fenildoshi.com/configural-shape/)\
-Tweet Thread: [Link](https://x.com/fenildoshi009/status/1940465973544603822?s=61)
+Tweet Thread: [Link](https://x.com/fenildoshi009/status/1968807305811492940)
 
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models* Arxiv](https://arxiv.org/abs/2507.00493)
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models.* NeurIPS 2025](https://arxiv.org/abs/2507.00493)
 
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks.* Journal of Vision, 25(9), 2148-2148](https://jov.arvojournals.org/article.aspx?articleid=2809981)
 <!-- https://feziodoshi.github.io/files/vss_25.pdf -->
