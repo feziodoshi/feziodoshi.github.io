@@ -9,8 +9,6 @@ redirect_from:
 
 Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#) in the [Vision Sciences Lab](https://visionlab.harvard.edu) and [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). Broadly, I study how the human visual system transforms raw sensory input into structured, meaningful representations and how we can uncover similar mechanisms inside large-scale vision models.
 
-<!-- > My work bridges ***cognitive science, computational vision, and mechanistic interpretability*** to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, and how long-range interactions support object perception in both humans and artificial systems. -->
-
 <blockquote class="hover-bridge">
   My work bridges <strong><em>cognitive science, computational vision, and mechanistic interpretability</em></strong> 
   to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, 
