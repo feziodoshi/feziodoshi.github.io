@@ -23,18 +23,8 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 * **On the brain and behavior side,** I examine the tuning and spatial organization of visual representations, characterizing how mid-level perceptual groupng mechanisms give rise to object-shape perception in humans and vision models.
 
-*Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision.*
+Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision. For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this]((https://gsas.harvard.edu/news/seeing-how-we-see)) page, and learn more about my background and earlier work through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
 
-<p class="research-links">
-  For a brief overview of my ongoing research, you can read the short feature article linked on 
-  <a href="https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/">this</a> 
-  and 
-  <a href="https://gsas.harvard.edu/news/seeing-how-we-see">this</a> 
-  page, and learn more about my background and earlier work through the 
-  <a href="https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/">Harvard Brain Science Initiative page</a>.
-</p>
-
-<!-- *Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision.* For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this]((https://gsas.harvard.edu/news/seeing-how-we-see)) page, and learn more about my background and earlier work through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/). -->
 
 ### Here is our recent work on holistic processing and shape perception in vision models
 Link to [paper](https://arxiv.org/abs/2507.00493) (NeurIPS 2025), [project page](https://www.fenildoshi.com/configural-shape/), and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
