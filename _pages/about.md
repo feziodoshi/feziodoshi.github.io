@@ -19,7 +19,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 * **On the cognitive and computational side,** I study whether self-supervised learning and vision-language alignment provide the inductive biases to learn holistic shape and show human-like sensitivity to configural relations between object parts.
 
-* **On the mechanistic side,** we build a decomposition framework that separates positional and semantic information in Vision Transformers via spectral factorization of the query–key interaction, allowing us to isolate the circuits that govern internal information flow.
+* **On the mechanistic interpretability side,** we build a decomposition framework that separates positional and semantic information in Vision Transformers via spectral factorization of the query–key interaction, allowing us to isolate the circuits that govern internal information flow.
 
 * **On the brain/neural side,** I examine the tuning and spatial organization of visual representations, characterizing how mid-level perceptual grouping mechanisms give rise to object-shape perception in humans and vision models.
 
