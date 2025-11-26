@@ -17,7 +17,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
   and how long-range interactions support object perception in both humans and artificial systems.
 </blockquote>
 
-* **On the cognitive and computational side,** I study whether self-supervised learning, distillation, and vision-language alignment provide the inductive biases needed for models to learn holistic shape and show human-like sensitivity to configural relations between object parts.
+* **On the cognitive and computational side,** I study whether self-supervised learning and vision-language alignment provide the inductive biases to learn holistic shape and show human-like sensitivity to configural relations between object parts.
 
 * **On the mechanistic side,** we build a decomposition framework that separates positional and semantic information in Vision Transformers via spectral factorization of the query–key interaction, allowing us to isolate the circuits that govern internal information flow.
 
