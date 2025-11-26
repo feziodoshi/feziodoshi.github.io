@@ -9,7 +9,13 @@ redirect_from:
 
 Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#) in the [Vision Sciences Lab](https://visionlab.harvard.edu) and [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). Broadly, I study how the human visual system transforms raw sensory input into structured, meaningful representations and how we can uncover similar mechanisms inside large-scale vision models.
 
-> My work bridges ***cognitive science, computational vision, and mechanistic interpretability*** to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, and how long-range interactions support object perception in both humans and artificial systems.
+<!-- > My work bridges ***cognitive science, computational vision, and mechanistic interpretability*** to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, and how long-range interactions support object perception in both humans and artificial systems. -->
+
+<blockquote class="hover-bridge">
+  My work bridges <strong><em>cognitive science, computational vision, and mechanistic interpretability</em></strong> 
+  to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, 
+  and how long-range interactions support object perception in both humans and artificial systems.
+</blockquote>
 
 * **On the cognitive and computational side,** I study whether self-supervised learning, distillation, and vision-language alignment provide the inductive biases needed for models to learn holistic shape and show human-like sensitivity to configural relations between object parts.
 
@@ -47,3 +53,28 @@ Presented at Vision Sciences Society 2021
 
 
 
+<style>
+/* subtle hover for the “bridges cognitive science…” block */
+blockquote.hover-bridge {
+  border-left: 3px solid #ddd;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+blockquote.hover-bridge:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: #555;
+  transform: translateY(-1px);
+}
+
+/* optional: if you ever want to tweak all paper images at once */
+.paper-image {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.paper-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+</style>
