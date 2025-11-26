@@ -9,8 +9,7 @@ redirect_from:
 
 Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#) in the [Vision Sciences Lab](https://visionlab.harvard.edu) and [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). Broadly, I study how the human visual system transforms raw sensory input into structured, meaningful representations and how we can uncover similar mechanisms inside large-scale vision models.
 
-My work bridges ***cognitive science, computational vision, and mechanistic interpretability*** to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, and how long-range interactions support object perception in both humans and artificial systems.
-
+> My work bridges ***cognitive science, computational vision, and mechanistic interpretability*** to understand mid-level vision: how local elements are grouped into proto-objects, how global shape emerges, and how long-range interactions support object perception in both humans and artificial systems.
 
 * **On the cognitive and computational side,** I study whether self-supervised learning, distillation, and vision-language alignment provide the inductive biases needed for models to learn holistic shape and show human-like sensitivity to configural relations between object parts.
 
@@ -18,7 +17,8 @@ My work bridges ***cognitive science, computational vision, and mechanistic inte
 
 * **On the brain and behavior side,** I examine the tuning and spatial organization of visual representations, characterizing how mid-level perceptual groupng mechanisms give rise to object-shape perception in humans and vision models.
 
-***Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision.*** For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this]((https://gsas.harvard.edu/news/seeing-how-we-see)) page, and learn more about my background and earlier work through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
+*Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision.* For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this]((https://gsas.harvard.edu/news/seeing-how-we-see)) page, and learn more about my background and earlier work through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
+
 
 
 ### Here is our recent work on holistic processing and shape perception in vision models
