@@ -20,6 +20,8 @@ Tweet Thread: [Link](https://x.com/fenildoshi009/status/1968807305811492940)
 
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models.* NeurIPS 2025](https://arxiv.org/abs/2507.00493)
 
+* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs.* Mechanistic Interpretability Workshop at NeurIPS 2025](https://openreview.net/forum?id=2XA7zVjoej&referrer=%5Bthe%20profile%20of%20Talia%20Konkle%5D(%2Fprofile%3Fid%3D~Talia_Konkle1)
+
 * Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks.* Journal of Vision, 25(9), 2148-2148](https://jov.arvojournals.org/article.aspx?articleid=2809981). [Poster Link](https://feziodoshi.github.io/files/vss_25.pdf)
 
 * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
