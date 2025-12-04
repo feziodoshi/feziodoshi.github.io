@@ -21,7 +21,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 * **On the mechanistic interpretability side,** we build a decomposition framework that separates positional and semantic information in Vision Transformers via spectral factorization of the query–key interaction, allowing us to isolate the circuits that govern internal information flow.
 
-* **On the brain/neural side,** I examine the tuning and topographic organization of visual representations in humans and vision models, characterizing how perceptual grouping mechanisms (e.g., contour integration) emerge and spatialy organize via self-organinzing constraints.
+* **On the brain/neural side,** I examine the tuning and topographic organization of visual representations in humans and vision models, characterizing how perceptual grouping mechanisms (e.g., contour integration) emerge and spatialy organize via self-organizing constraints.
 
 <!-- mid-level perceptual grouping mechanisms give rise to object-shape perception in humans and vision models. -->
 
