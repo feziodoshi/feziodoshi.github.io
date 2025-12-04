@@ -21,7 +21,9 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 * **On the mechanistic interpretability side,** we build a decomposition framework that separates positional and semantic information in Vision Transformers via spectral factorization of the query–key interaction, allowing us to isolate the circuits that govern internal information flow.
 
-* **On the brain/neural side,** I examine the tuning and spatial organization of visual representations, characterizing how mid-level perceptual grouping mechanisms give rise to object-shape perception in humans and vision models.
+* **On the brain/neural side,** I examine the tuning and topographic organization of visual representations in humans and vision models, characterizing how perceptual grouping mechanisms (e.g., contour integration) emerge and spatialy organize via self-organinzing constraints.
+
+<!-- mid-level perceptual grouping mechanisms give rise to object-shape perception in humans and vision models. -->
 
 For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this](https://gsas.harvard.edu/news/seeing-how-we-see) page, and learn more about my background through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
 
