@@ -25,7 +25,9 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 <!-- mid-level perceptual grouping mechanisms give rise to object-shape perception in humans and vision models. -->
 
-For a brief overview of my ongoing research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this](https://gsas.harvard.edu/news/seeing-how-we-see) page, and learn more about my background through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/).
+For a brief overview of my research, you can read the short feature article linked on [this](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/) and [this](https://gsas.harvard.edu/news/seeing-how-we-see) page.
+
+<!-- and learn more about my background through the [Harvard Brain Science Initiative page](https://brain.harvard.edu/hbi_humans/fenil-rakesh-doshi/). -->
 
 <!-- Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision. -->
 
