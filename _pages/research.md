@@ -51,7 +51,6 @@ redirect_from:
 @media (max-width: 768px) {
   .pub-entry {
     flex-direction: column;
-    margin-bottom: 3.5em;
   }
   .pub-img {
     flex: none;
