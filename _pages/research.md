@@ -49,6 +49,9 @@ redirect_from:
   margin-bottom: 1em;
 }
 @media (max-width: 768px) {
+  .pub-entry {
+    flex-direction: column;
+  }
   .pub-img {
     flex: none;
     max-width: 100%;
@@ -56,9 +59,6 @@ redirect_from:
   }
   .pub-img img {
     max-width: 280px;
-  }
-  .pub-entry {
-    flex-direction: column;
   }
 }
 </style>
