@@ -31,7 +31,7 @@ For a brief overview of my research, you can read the short feature article link
 
 <!-- Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision. -->
 
-### Here is our recent work on holistic processing and shape perception in vision models
+### Here is our recent work on shape perception in vision models
 Link to [paper](https://arxiv.org/abs/2507.00493) (NeurIPS 2025), [project page](https://www.fenildoshi.com/configural-shape/), and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
 
 <img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
