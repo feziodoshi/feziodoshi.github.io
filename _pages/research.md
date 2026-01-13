@@ -58,7 +58,7 @@ redirect_from:
     width: 100%;
   }
   .pub-img img {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 </style>
