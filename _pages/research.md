@@ -63,6 +63,7 @@ redirect_from:
 }
 </style>
 
+* [Information Flow](#information-flow)
 * [Shape Perception](#shape-perception)
 * [Cortical Topography](#cortical-topography)
 * [Mid-level Vision](#mid-level-vision)
@@ -72,6 +73,35 @@ redirect_from:
 
 
 
+<h3 id="information-flow" class="section-header">Dissecting Information Flow in Vision Models</h3>
+
+<!-- <p class="collaborators">
+With <a href="https://www.hragpailian.com">Hrag Pailian</a> and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
+</p> -->
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/information_flow/bfd.png" alt="BFD"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Bi-orthogonal Factor Decomposition for Vision Transformers</span><br>
+<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">preprint</span><br>
+<span class="pub-links">[<a href="https://arxiv.org/abs/2601.05328">Paper</a>] [<a href="https://www.fenildoshi.com/bfd-transformers/">Project Page</a>] [<a href="https://x.com/fenildoshi009/status/1968807305811492940">Twitter</a>]</span>
+</div>
+</div>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/information_flow/headdistance_mechinterp.png" alt="Local to Contextual"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs</span><br>
+<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Mechanistic Interpretability Workshop at NeurIPS 2025</span><br>
+<span class="pub-links">[<a href="https://openreview.net/pdf?id=2XA7zVjoej">Paper</a>]</span>
+</div>
+</div>
 
 
 <h3 id="shape-perception" class="section-header">Shape Perception</h3>
@@ -93,17 +123,6 @@ With <a href="https://thomasfel.fr/">Thomas Fel</a>, <a href="http://konklab.fas
 </div>
 </div>
 
-<div class="pub-entry">
-<div class="pub-img">
-<img src="/images/research_snippets/shape_perception/headdistance_mechinterp.png" alt="Local to Contextual"/>
-</div>
-<div class="pub-content">
-<span class="pub-title">From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs</span><br>
-<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
-<span class="pub-venue">Mechanistic Interpretability Workshop at NeurIPS 2025</span><br>
-<span class="pub-links">[<a href="https://openreview.net/pdf?id=2XA7zVjoej">Paper</a>]</span>
-</div>
-</div>
 
 <div class="pub-entry">
 <div class="pub-img">
