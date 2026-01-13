@@ -63,7 +63,7 @@ redirect_from:
 }
 </style>
 
-* [Information Flow](#information-flow)
+* [Information Flow in ViTs](#information-flow)
 * [Shape Perception](#shape-perception)
 * [Cortical Topography](#cortical-topography)
 * [Mid-level Vision](#mid-level-vision)
@@ -73,7 +73,7 @@ redirect_from:
 
 
 
-<h3 id="information-flow" class="section-header">Dissecting Information Flow in Vision Models</h3>
+<h3 id="information-flow" class="section-header">Dissecting Information Flow in ViTs</h3>
 
 <!-- <p class="collaborators">
 With <a href="https://www.hragpailian.com">Hrag Pailian</a> and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
