@@ -48,6 +48,19 @@ redirect_from:
   color: #555;
   margin-bottom: 1em;
 }
+@media (max-width: 768px) {
+  .pub-entry {
+    flex-direction: column;
+  }
+  .pub-img {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  .pub-img img {
+    max-width: 280px;
+  }
+}
 </style>
 
 * [Shape Perception](#shape-perception)
