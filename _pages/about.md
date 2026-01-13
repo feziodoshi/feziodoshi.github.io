@@ -13,8 +13,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 <blockquote class="hover-bridge">
   My work bridges <strong><em>cognitive science, computational vision, and mechanistic interpretability</em></strong> 
-  to understand object perception: how local elements are grouped into proto-objects, how global shape emerges, 
-  and how long-range interactions support holistic processing in both humans and artificial systems.
+  to understand object perception in humans and artificial systems: how local elements are organized and grouped into proto-objects, how information flows through long-range interactions, and how holistic global shape ultimately emerges.
 </blockquote>
 
 * **On the cognitive and computational side,** I study whether self-supervised learning and vision-language alignment provide the inductive biases to learn holistic shape and human-like sensitivity to configural relations between object parts.
@@ -30,7 +29,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 <!-- Across these projects, my goal is to combine theory-driven experiments with mechanistic analyses to uncover the computational principles that underlie both biological and artificial vision. -->
 
 
-### Here is our recent work on information flow in Vision Transformer attention heads
+### Here is our recent work on information flow in ViT attention heads
 Link to [paper](https://arxiv.org/abs/2601.05328) , [project page](https://www.fenildoshi.com/bfd-transformers/), and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
 
 <img src="https://feziodoshi.github.io/images/cover_bfd.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
