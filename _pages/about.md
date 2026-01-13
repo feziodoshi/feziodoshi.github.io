@@ -30,7 +30,7 @@ Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, adv
 
 
 ### Here is our recent work on information flow in ViT attention heads
-Link to [paper](https://arxiv.org/abs/2601.05328) , [project page](https://www.fenildoshi.com/bfd-transformers/), and [tweet-thread](https://x.com/fenildoshi009/status/1968807305811492940)
+Link to [paper](https://arxiv.org/abs/2601.05328) , [project page](https://www.fenildoshi.com/bfd-transformers/), and [tweet-thread](https://x.com/fenildoshi009/status/2011203284300939483)
 
 <img src="https://feziodoshi.github.io/images/cover_bfd.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 

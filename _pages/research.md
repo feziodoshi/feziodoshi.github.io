@@ -87,7 +87,7 @@ With <a href="https://www.hragpailian.com">Hrag Pailian</a> and <a href="https:/
 <span class="pub-title">Bi-orthogonal Factor Decomposition for Vision Transformers</span><br>
 <b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
 <span class="pub-venue">preprint</span><br>
-<span class="pub-links">[<a href="https://arxiv.org/abs/2601.05328">Paper</a>] [<a href="https://www.fenildoshi.com/bfd-transformers/">Project Page</a>] [<a href="https://x.com/fenildoshi009/status/1968807305811492940">Twitter</a>]</span>
+<span class="pub-links">[<a href="https://arxiv.org/abs/2601.05328">Paper</a>] [<a href="https://www.fenildoshi.com/bfd-transformers/">Project Page</a>] [<a href="https://x.com/fenildoshi009/status/2011203284300939483">Twitter</a>]</span>
 </div>
 </div>
 
