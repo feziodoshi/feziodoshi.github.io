@@ -7,104 +7,320 @@ redirect_from:
   - /publications
 ---
 
-{: .no_toc}
+<style>
+.pub-entry {
+  display: flex;
+  margin-bottom: 2.5em;
+  line-height: 1.6;
+  gap: 1em;
+}
+.pub-img {
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+.pub-img img {
+  width: 100%;
+}
+.pub-content {
+  flex: 1;
+}
+.pub-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.pub-venue {
+  color: #666;
+  font-style: italic;
+}
+.pub-links a {
+  font-size: 0.9em;
+}
+.section-header {
+  font-size: 1.4em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  scroll-margin-top: 1em;
+}
+.collaborators {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 1em;
+}
+</style>
 
-* TOC
-{:toc}
-
-## 1) Holistic Processing and Shape Perception in Vision Models
-
-Collaborators: [Thomas Fel](https://thomasfel.fr/), [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
-Project page: [Link](https://www.fenildoshi.com/configural-shape/)\
-Tweet Thread: [Link](https://x.com/fenildoshi009/status/1968807305811492940)
-
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models.* NeurIPS 2025](https://arxiv.org/abs/2507.00493)
-
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs.* Mechanistic Interpretability Workshop at NeurIPS 2025](https://shorturl.at/0Bzii)
-
-* Doshi, F. R., Fel, T., Konkle, T., & Alvarez, G.A. (2025). [*Disentangling Local and Global Processing in Deep Neural Networks.* Journal of Vision, 25(9), 2148-2148](https://jov.arvojournals.org/article.aspx?articleid=2809981). [Poster Link](https://feziodoshi.github.io/files/vss_25.pdf)
-
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Configural-Shape Representation in Deep Neural Networks.* Paper In Cognitive Computational Neuroscience (CCN), 2024.](https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf)
-
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*Quantifying the Quality of  Shape and Texture in Deep Neural Network Models.* Journal of Vision, 24(10), 1263-1263](https://jov.arvojournals.org/article.aspx?articleid=2801825)
-<!-- https://feziodoshi.github.io/files/vss_24.pdf -->
+* [Shape Perception](#shape-perception)
+* [Cortical Topography](#cortical-topography)
+* [Mid-level Vision](#mid-level-vision)
+* [Intuitive Physics](#intuitive-physics)
+* [Visual Working Memory](#working-memory)
+* [Other](#other)
 
 
-<img src="https://feziodoshi.github.io/images/configural_shape_holistic_paper.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 3px solid black;"/>
 
 
-## 2) A computational account of topography in the occipitotemporal cortex via domain-general pressures 
-Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/)\
-Tweet Thread: [Link](https://twitter.com/fenildoshi009/status/1567956934971768832?s=20&t=Dno1tBXnH3oVA13gnZeoRw)
 
-* Doshi, F. R., & Konkle, T. (2023). [*Cortical topographic motifs emerge in a self-organized map of object space.* Science Advances, 9(25), eade8187.](https://www.science.org/doi/10.1126/sciadv.ade8187)
+<h3 id="shape-perception" class="section-header">Shape Perception</h3>
 
-* Doshi, F. R., & Konkle, T. (2023). [*Face-deprived networks show distributed but not clustered face-selective maps.*  Journal of Vision, 23(9), 5435-5435.](https://jov.arvojournals.org/article.aspx?articleid=2791966) 
+<!-- <p class="collaborators">
+With <a href="https://thomasfel.fr/">Thomas Fel</a>, <a href="http://konklab.fas.harvard.edu/">Talia Konkle</a>, and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
+</p> -->
 
-* Doshi, F., & Konkle, T. (2021). [*Organizational motifs of cortical responses to objects emerge in topographic projections of deep neural networks*. Journal of Vision, 21(9), 2226-2226.](https://jov.arvojournals.org/article.aspx?articleid=2777459) <br />
-
-* [Link to talk](https://www.youtube.com/watch?v=zZvrIuoxU6Y) presented at the Vision Sciences Society 2021 Conference
-
-<img src="https://feziodoshi.github.io/images/research_topography_0.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
-<div style="display: flex;">
-<img src="https://feziodoshi.github.io/images/research_topography_1.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
-<img src="https://feziodoshi.github.io/images/research_topography_2.png" alt="drawing" style="width:50%;height: auto;flex: 50%;padding: 2px; border: 1px dotted gray;"/>
+<div class="pub-entry">
+<div class="pub-img" style="display: flex; flex-direction: column; align-items: flex-start;">
+  <img src="/images/research_snippets/shape_perception/css_neurips.gif" alt="Visual Anagrams" style="margin-bottom: 0.5em;"/>
+  <img src="/images/research_snippets/shape_perception/css_neurips.png" alt="Additional Visual Anagram"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models</span><br>
+<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">NeurIPS 2025</span><br>
+<span class="pub-links">[<a href="https://arxiv.org/abs/2507.00493">Paper</a>] [<a href="https://www.fenildoshi.com/configural-shape/">Project Page</a>] [<a href="https://x.com/fenildoshi009/status/1968807305811492940">Twitter</a>]</span>
+</div>
 </div>
 
-## 3) Mechanisms of Contour Integration in Humans and Machines
-Collaborators: [Talia Konkle](http://konklab.fas.harvard.edu/) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)\
-Tweet Thread: [Link](https://x.com/fenildoshi009/status/1960040583961223229?s=61)
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/shape_perception/headdistance_mechinterp.png" alt="Local to Contextual"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs</span><br>
+<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Mechanistic Interpretability Workshop at NeurIPS 2025</span><br>
+<span class="pub-links">[<a href="https://shorturl.at/0Bzii">Paper</a>]</span>
+</div>
+</div>
 
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2025). [*A feedforward mechanism for human-like contour integration.* PLOS Computational Biology, 2025.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013391)
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/shape_perception/dvcl.png" alt="Local Global"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Disentangling Local and Global Processing in Deep Neural Networks</span><br>
+<b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Journal of Vision, 25(9), 2148-2148, 2025</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2809981">Paper</a>] [<a href="https://feziodoshi.github.io/files/vss_25.pdf">Poster</a>]</span>
+</div>
+</div>
 
-<!-- * Doshi, F. R., Konkle, T., & Alvarez, G.A. (2024). [*A feedforward mechanism for human-like contour integration.* Biorxiv, 2024.](https://www.biorxiv.org/content/10.1101/2024.06.11.598524v2) -->
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/shape_perception/csi_ccn.png" alt="Configural Shape"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Configural-Shape Representation in Deep Neural Networks</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Cognitive Computational Neuroscience (CCN), 2024</span><br>
+<span class="pub-links">[<a href="https://2024.ccneuro.org/pdf/400_Paper_authored_d4-final.pdf">Paper</a>] [<a href="https://feziodoshi.github.io/files/ccn_24.pdf">Poster</a>]</span>
+</div>
+</div>
 
-* Doshi, F. R., Konkle, T., & Alvarez, G.A. (2023). [*Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration.* In Cognitive Computational Neuroscience (CCN), 2023.](https://2023.ccneuro.org/proceedings/0000361.pdf)
-
-* Doshi, F., Konkle, T., & Alvarez, G.A. (2022). [*Human-like signatures of contour integration in deep neural networks.* Journal of Vision 22, no. 14 (2022): 4222-4222](https://jov.arvojournals.org/article.aspx?articleid=2784827) <br />
-
-* [Link to talk](https://www.youtube.com/watch?v=PsmZAMGeV6A) presented at the Vision Sciences Society 2022 Conference
-
-<!-- 
-<img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:100%;"/>
-<img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height:60%;display: block;margin-left: auto;margin-right: auto"/> -->
-
-<!-- <div style="display: flex;">
-<img src="https://feziodoshi.github.io/images/contour_integration_3.png" alt="drawing" style="width:60%;height: auto;flex: 33.33%;padding: 5px;"/>
-<img src="https://feziodoshi.github.io/images/contour_integration_1.png" alt="drawing" style="width:60%;height: auto;flex: 33.33%;padding: 5px;"/>
+<!-- <div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/placeholder.png" alt="Shape Texture"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Quantifying the Quality of Shape and Texture in Deep Neural Networks</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Journal of Vision, 24(10), 1263-1263, 2024</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2801825">Paper</a>]</span>
+</div>
 </div> -->
 
-<img src="https://feziodoshi.github.io/images/contour_integration_results.png" alt="drawing" style="width:100%;height: auto;display: block;margin-left: auto;margin-right: auto;"/>
-
-## 4) Perceptual features as optimal proxies for intuitive physical reasoning
-
-Collaborators: [Colin Conwell](https://colinconwell.github.io) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
-
-* Conwell, C., Doshi, F., Alvarez, G.A.(2019). [*Shared Representations of Stability in Humans, Supervised, & Unsupervised Neural Networks. In Shared Visual Representations in Human and Machine Intelligence*. SVRHM workshop at NeurIPS 2019.](https://feziodoshi.github.io/files/neurips_2019_svrhm.pdf)
-
-* Conwell, C., Doshi, F., Alvarez, G.A.(2019). [*Human-Like Judgments of Stability Emerge from Purely Perceptual Features: Evidence from Supervised and Unsupervised Deep Neural Networks.* In Proceedings of the 3rd Conference on Cognitive Computational Neuroscience (CCN), 2019.](https://ccneuro.org/2019/proceedings/0000605.pdf)
-
-<!-- ![Interpolations in Latent Space](https://feziodoshi.github.io/images/transformations.gif) -->
-<!-- {% include image_yolo.html url="https://feziodoshi.github.io/images/transformations_2.gif" description="Interpolations in pixel space vs the latent space of an adversarial variational autoencoder" %} -->
-<img src="https://feziodoshi.github.io/images/transformations_2.gif" alt="drawing" style="width:60%;height: auto;display: block;margin-left: auto;margin-right: auto; border: 2px solid gray;"/>
-
-## 5) Capacity limits in visual working memory
-
-Collaborators: [Hrag Pailian](https://www.hragpailian.com) and [George Alvarez](https://scorsese.wjh.harvard.edu/George/)
-
-* Doshi, F., Pailian, H., & Alvarez, G. A. (2020). [*Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory*. Journal of Vision, 20(11), 149-149.](https://jov.arvojournals.org/article.aspx?articleid=2771225) <br />[Link to poster walkthrough](https://www.youtube.com/watch?v=TLvh2EuWP4s)
-
-Also check out Hrag's talk [here](https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo)!
 
 
-## 6) Previous work
 
-* Liu, Yc., Wu, H., Mayeshiba, T. et al. (2022). [Machine learning predictions of irradiation embrittlement in reactor pressure vessel steels. In NPJ Computational Materials, 2022.](https://www.nature.com/articles/s41524-022-00760-4)
 
-* Kanakasabapathy, M., Thirumalaraju, P., Kandula, H., Doshi, F., Sivakumar, A., Kartik, D.,
-Gupta, R., Pooniwala, R., Branda, J., Tsibris, A., Kuritzkes, D., Petrozza, J., Bormann, C.,
-Shafiee H. (2021). [*Adaptive adversarial neural networks for the analysis of lossy and domainshifted datasets of medical images. In Nature Biomedical Engineering, 2021.*](https://www.nature.com/articles/s41551-021-00733-w)
 
-* Thirumalaraju, P., Bormann, CL., Kanakasabapathy, M., Doshi, F., Souter, I., Dimitriadis, I.,
-Shafiee, H.(2018). [*Automated sperm morpshology testing using artificial intelligence. In Fertility and sterility, 2018*](https://www.fertstert.org/article/S0015-0282(18)31848-X/fulltext)
+<h3 id="cortical-topography" class="section-header">Cortical Topography</h3>
 
+<!-- <p class="collaborators">
+With <a href="http://konklab.fas.harvard.edu/">Talia Konkle</a>
+</p> -->
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/cortical_topography/som_topography.gif" alt="Topographic Motifs"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Cortical topographic motifs emerge in a self-organized map of object space</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle<br>
+<span class="pub-venue">Science Advances 2023</span><br>
+<span class="pub-links">[<a href="https://www.science.org/doi/10.1126/sciadv.ade8187">Paper</a>] [<a href="https://x.com/fenildoshi009/status/1567956934971768832">Twitter</a>] [<a href="https://www.youtube.com/watch?v=zZvrIuoxU6Y">Talk-VSS 21</a>]</span>
+</div>
+</div>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/cortical_topography/face_deprived.png" alt="Face Deprived"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Face-deprived networks show distributed but not clustered face-selective maps</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle<br>
+<span class="pub-venue">Journal of Vision, 23(9), 5435-5435, 2023</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2791966">Paper</a>] [<a href="https://feziodoshi.github.io/files/vss_23.pdf">Poster</a>]</span>
+</div>
+</div>
+
+<!-- <div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/placeholder.png" alt="Organizational Motifs"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Organizational motifs of cortical responses to objects emerge in topographic projections of deep neural networks</span><br>
+<b>Fenil Doshi</b>, Talia Konkle<br>
+<span class="pub-venue">Journal of Vision, 21(9), 2226-2226, 2021</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2777459">Paper</a>] [<a href="https://www.youtube.com/watch?v=zZvrIuoxU6Y">Talk</a>]</span>
+</div>
+</div> -->
+
+
+
+
+
+<h3 id="mid-level-vision" class="section-header">Mid-level Vision</h3>
+
+<!-- <p class="collaborators">
+With <a href="http://konklab.fas.harvard.edu/">Talia Konkle</a> and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
+</p> -->
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/mid_level/contour_integration.gif" alt="Contour Integration"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">A feedforward mechanism for human-like contour integration</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">PLOS Computational Biology, 2025</span><br>
+<span class="pub-links">[<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013391">Paper</a>] [<a href="https://x.com/fenildoshi009/status/1960040583961223229?s=61">Twitter</a>] [<a href="https://www.youtube.com/watch?v=PsmZAMGeV6A">Talk-VSS 22</a>]</span>
+</div>
+</div>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/mid_level/contour_ccn.png" alt="Feedforward Contour"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Feedforward Neural Networks can capture Human-like Perceptual and Behavioral Signatures of Contour Integration</span><br>
+<b>Fenil R. Doshi</b>, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Cognitive Computational Neuroscience (CCN), 2023</span><br>
+<span class="pub-links">[<a href="https://2023.ccneuro.org/proceedings/0000361.pdf">Paper</a>] [<a href="https://feziodoshi.github.io/files/ccn_23.pdf">Poster</a>]</span>
+</div>
+</div>
+
+<!-- <div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/placeholder.png" alt="Contour DNN"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Human-like signatures of contour integration in deep neural networks</span><br>
+<b>Fenil Doshi</b>, Talia Konkle, George A. Alvarez<br>
+<span class="pub-venue">Journal of Vision, 22(14), 4222-4222, 2022</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2784827">Paper</a>] [<a href="https://www.youtube.com/watch?v=PsmZAMGeV6A">Talk</a>]</span>
+</div>
+</div> -->
+
+
+
+
+
+
+<h3 id="intuitive-physics" class="section-header">Intuitive Physics</h3>
+
+<!-- <p class="collaborators">
+With <a href="https://colinconwell.github.io">Colin Conwell</a> and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
+</p> -->
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/physics/physics_neurips.png" alt="Stability"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Shared Representations of Stability in Humans, Supervised, & Unsupervised Neural Networks</span><br>
+Colin Conwell, <b>Fenil Doshi</b>, George A. Alvarez<br>
+<span class="pub-venue">SVRHM Workshop at NeurIPS 2019</span><br>
+<span class="pub-links">[<a href="https://feziodoshi.github.io/files/neurips_2019_svrhm.pdf">Paper</a>]</span>
+</div>
+</div>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/physics/physics_ccn.gif" alt="Perceptual Stability"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Human-Like Judgments of Stability Emerge from Purely Perceptual Features: Evidence from Supervised and Unsupervised Deep Neural Networks</span><br>
+Colin Conwell, <b>Fenil Doshi</b>, George A. Alvarez<br>
+<span class="pub-venue">Cognitive Computational Neuroscience (CCN), 2019</span><br>
+<span class="pub-links">[<a href="https://2019.ccneuro.org/proceedings/0000605.pdf">Paper</a>]</span>
+</div>
+</div>
+
+
+
+
+
+
+
+<h3 id="working-memory" class="section-header">Capacity Limits in Visual Working Memory</h3>
+
+<!-- <p class="collaborators">
+With <a href="https://www.hragpailian.com">Hrag Pailian</a> and <a href="https://scorsese.wjh.harvard.edu/George/">George Alvarez</a>
+</p> -->
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/vwm/vwm.png" alt="Working Memory"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory</span><br>
+<b>Fenil Doshi</b>, Hrag Pailian, George A. Alvarez<br>
+<span class="pub-venue">Journal of Vision, 20(11), 149-149, 2020</span><br>
+<span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2771225">Paper</a>] [<a href="https://www.youtube.com/watch?v=TLvh2EuWP4s">Poster</a>] [<a href="https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo">Co-author Talk</a>]</span>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<h3 id="other" class="section-header">Other</h3>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/other/morphology.png" alt="Adversarial NN"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Adaptive adversarial neural networks for the analysis of lossy and domain-shifted datasets of medical images</span><br>
+M. Kanakasabapathy, P. Thirumalaraju, H. Kandula, <b>F. Doshi</b>, A. Sivakumar, D. Kartik, R. Gupta, R. Pooniwala, J. Branda, A. Tsibris, D. Kuritzkes, J. Petrozza, C. Bormann, H. Shafiee<br>
+<span class="pub-venue">Nature Biomedical Engineering, 2021</span><br>
+<span class="pub-links">[<a href="https://www.nature.com/articles/s41551-021-00733-w">Paper</a>] [<a href="https://www.fertstert.org/article/S0015-0282(18)31848-X/fulltext">Fertstert Abstract</a>]</span>
+</div>
+</div>
+
+<div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/other/dbtt.png" alt="ML Predictions"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Machine learning predictions of irradiation embrittlement in reactor pressure vessel steels</span><br>
+Yc. Liu, H. Wu, T. Mayeshiba, ..<b>Fenil Doshi</b>, ..et al.<br>
+<span class="pub-venue">NPJ Computational Materials, 2022</span><br>
+<span class="pub-links">[<a href="https://www.nature.com/articles/s41524-022-00760-4">Paper</a>]</span>
+</div>
+</div>
+
+<!-- <div class="pub-entry">
+<div class="pub-img">
+<img src="/images/research_snippets/placeholder.png" alt="Sperm Morphology"/>
+</div>
+<div class="pub-content">
+<span class="pub-title">Automated sperm morphology testing using artificial intelligence</span><br>
+P. Thirumalaraju, C.L. Bormann, M. Kanakasabapathy, <b>F. Doshi</b>, I. Souter, I. Dimitriadis, H. Shafiee<br>
+<span class="pub-venue">Fertility and Sterility, 2018</span><br>
+<span class="pub-links">[<a href="https://www.fertstert.org/article/S0015-0282(18)31848-X/fulltext">Paper</a>]</span>
+</div>
+</div> -->
