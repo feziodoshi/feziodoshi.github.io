@@ -131,7 +131,7 @@ With <a href="https://thomasfel.fr/">Thomas Fel</a>, <a href="http://konklab.fas
 <div class="pub-content">
 <span class="pub-title">Disentangling Local and Global Processing in Deep Neural Networks</span><br>
 <b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
-<span class="pub-venue">Journal of Vision, 25(9), 2148-2148, 2025</span><br>
+<span class="pub-venue">Journal of Vision, 2025</span><br>
 <span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2809981">Paper</a>] [<a href="https://feziodoshi.github.io/files/vss_25.pdf">Poster</a>]</span>
 </div>
 </div>
@@ -190,7 +190,7 @@ With <a href="http://konklab.fas.harvard.edu/">Talia Konkle</a>
 <div class="pub-content">
 <span class="pub-title">Face-deprived networks show distributed but not clustered face-selective maps</span><br>
 <b>Fenil R. Doshi</b>, Talia Konkle<br>
-<span class="pub-venue">Journal of Vision, 23(9), 5435-5435, 2023</span><br>
+<span class="pub-venue">Journal of Vision, 2023</span><br>
 <span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2791966">Paper</a>] [<a href="https://feziodoshi.github.io/files/vss_23.pdf">Poster</a>]</span>
 </div>
 </div>
@@ -307,7 +307,7 @@ With <a href="https://www.hragpailian.com">Hrag Pailian</a> and <a href="https:/
 <div class="pub-content">
 <span class="pub-title">Using Deep Convolutional Neural Networks to Examine the Role of Representational Similarity in Visual Working Memory</span><br>
 <b>Fenil Doshi</b>, Hrag Pailian, George A. Alvarez<br>
-<span class="pub-venue">Journal of Vision, 20(11), 149-149, 2020</span><br>
+<span class="pub-venue">Journal of Vision, 2020</span><br>
 <span class="pub-links">[<a href="https://jov.arvojournals.org/article.aspx?articleid=2771225">Paper</a>] [<a href="https://www.youtube.com/watch?v=TLvh2EuWP4s">Poster</a>] [<a href="https://www.youtube.com/watch?v=WYJMv55Z8-0&feature=emb_logo">Co-author Talk</a>]</span>
 </div>
 </div>
