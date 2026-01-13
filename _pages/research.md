@@ -89,7 +89,7 @@ With <a href="https://thomasfel.fr/">Thomas Fel</a>, <a href="http://konklab.fas
 <span class="pub-title">Visual Anagrams Reveal Hidden Differences in Holistic Shape Processing Across Vision Models</span><br>
 <b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
 <span class="pub-venue">NeurIPS 2025</span><br>
-<span class="pub-links">[<a href="https://arxiv.org/abs/2507.00493">Paper</a>] [<a href="https://www.fenildoshi.com/configural-shape/">Project Page</a>] [<a href="https://x.com/fenildoshi009/status/1968807305811492940">Twitter</a>]</span>
+<span class="pub-links">[<a href="https://arxiv.org/abs/2507.00493">Paper</a>] [<a href="https://www.fenildoshi.com/configural-shape/">Project Page</a>] [<a href="https://feziodoshi.github.io/files/neurips_25.pdf">Poster</a>] [<a href="https://x.com/fenildoshi009/status/1968807305811492940">Twitter</a>]</span>
 </div>
 </div>
 
@@ -101,7 +101,7 @@ With <a href="https://thomasfel.fr/">Thomas Fel</a>, <a href="http://konklab.fas
 <span class="pub-title">From Local to Contextually-Enriched Local Representations: A Mechanism for Holistic Processing in DINOv2 ViTs</span><br>
 <b>Fenil R. Doshi</b>, Thomas Fel, Talia Konkle, George A. Alvarez<br>
 <span class="pub-venue">Mechanistic Interpretability Workshop at NeurIPS 2025</span><br>
-<span class="pub-links">[<a href="https://shorturl.at/0Bzii">Paper</a>]</span>
+<span class="pub-links">[<a href="https://openreview.net/pdf?id=2XA7zVjoej">Paper</a>]</span>
 </div>
 </div>
 
