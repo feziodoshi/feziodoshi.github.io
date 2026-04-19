@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Fenil R. Doshi"
-  avatar           : "fenil_003.jpg"
-  bio              : "Ph.D. candidate @ Harvard"
+  avatar           : "fenil_005.jpeg"
+  bio              : "Ph.D. candidate @ Harvard<br>Graduate Fellow @ Kempner"
   location         : Cambridge, Massachusetts
   employer         : "Harvard University"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : 
+  github           : "feziodoshi"
   google_plus      :
   keybase          :
   instagram        :
