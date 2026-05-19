@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding SPD → VPD</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg-alt:#f9f9f7;--bg-code:#f5f5f2;--border:#e5e5e0;--border-light:#eeeeea;--text:#2c2c2c;--text-s:#555;--text-dim:#999;--accent:#6b6b6b;--accent-light:#f5f5f2;--accent-dim:rgba(0,0,0,.04);--green:#3d8c5c;--green-light:#f3f9f5;--green-border:#c8e6d0;--orange:#a67c2e;--orange-light:#fdf8ef;--orange-border:#ebd9a8;--red:#b84040;--red-light:#fdf3f3;--red-border:#e8c4c4;--blue:#4a6fa5;--warm:#8a7a5a;--warm-light:#f9f6f0;--warm-border:#ddd5c4;--sidebar-w:260px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15.5px;-webkit-font-smoothing:antialiased}
+.layout{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);flex-shrink:0;position:fixed;top:0;left:0;height:100vh;overflow-y:auto;border-right:1px solid var(--border);padding:32px 20px 40px;background:var(--bg);z-index:100;scrollbar-width:thin}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+.sidebar-logo{font-family:'Source Serif 4',serif;font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:-.02em}
+.sidebar-logo span{color:var(--warm)}
+.sidebar-sub{font-size:.72rem;color:var(--text-dim);margin-bottom:28px;line-height:1.5}
+.toc-part{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--warm);margin:24px 0 8px;padding-left:12px}
+.toc-part:first-of-type{margin-top:0}
+.toc-link{display:block;font-size:.8rem;color:var(--text-s);text-decoration:none;padding:5px 12px;border-radius:6px;border-left:2px solid transparent;transition:all .15s;line-height:1.5}
+.toc-link:hover{color:var(--text);background:var(--bg-alt);border-left-color:var(--border)}
+.toc-link.active{color:var(--text);background:var(--bg-alt);border-left-color:var(--warm);font-weight:600}
+.main{margin-left:var(--sidebar-w);flex:1;max-width:780px;padding:48px 56px 80px}
+.page-header{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--border)}
+.page-header h1{font-family:'Source Serif 4',serif;font-size:2.4rem;font-weight:700;letter-spacing:-.03em;line-height:1.25}
+.page-header h1 span{color:var(--warm)}
+.page-header .subtitle{color:var(--text-dim);font-size:1.05rem;margin-top:12px}
+.page-header .meta{margin-top:16px;font-size:.8rem;color:var(--text-dim)}
+h2{font-family:'Source Serif 4',serif;font-size:1.7rem;font-weight:700;letter-spacing:-.02em;margin:56px 0 8px;line-height:1.3}
+h3{font-family:'Source Serif 4',serif;font-size:1.25rem;font-weight:600;margin:40px 0 8px;line-height:1.4}
+h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+p{margin:12px 0;color:var(--text-s)}
+strong{color:var(--text);font-weight:600}
+pre{background:var(--bg-code);border:1px solid var(--border-light);border-radius:8px;padding:18px 22px;font-family:'JetBrains Mono',monospace;font-size:.79rem;line-height:1.85;overflow-x:auto;margin:14px 0;color:var(--text)}
+code{font-family:'JetBrains Mono',monospace;font-size:.84em;background:var(--bg-code);padding:2px 6px;border-radius:4px;color:var(--blue)}
+.dim{color:var(--text-dim)}
+.callout{border-radius:8px;padding:18px 22px;margin:18px 0;border-left:3px solid}
+.callout p{margin:4px 0}
+.callout-accent{background:var(--warm-light);border-color:var(--warm)}.callout-accent h4{color:var(--warm)}
+.callout-green{background:var(--green-light);border-color:var(--green)}.callout-green h4{color:var(--green)}
+.callout-orange{background:var(--orange-light);border-color:var(--orange)}.callout-orange h4{color:var(--orange)}
+.callout-red{background:var(--red-light);border-color:var(--red)}.callout-red h4{color:var(--red)}
+.s{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:4px;padding:1px 7px;font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--orange);margin:2px 2px}
+.step{display:flex;align-items:center;gap:14px;margin:52px 0 14px}
+.step-n{width:32px;height:32px;border-radius:50%;background:var(--warm);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:700;flex-shrink:0}
+.step h3{margin:0}
+.part-label{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--warm);margin-bottom:4px}
+.flow{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0;font-size:.78rem}
+.fb{background:var(--bg-code);border:1px solid var(--border);border-radius:6px;padding:7px 14px;font-family:'JetBrains Mono',monospace;font-size:.75rem;text-align:center}
+.fb.hl{border-color:var(--warm);background:var(--warm-light);color:var(--warm)}
+.fb.gl{border-color:var(--green);background:var(--green-light);color:var(--green)}
+.fb.rl{border-color:var(--red);background:var(--red-light);color:var(--red)}
+.fa{color:var(--text-dim);font-size:1rem}
+svg{display:block;margin:8px auto}svg text{font-family:'JetBrains Mono',monospace}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.85rem}
+th{text-align:left;padding:10px 14px;background:var(--bg-alt);border:1px solid var(--border);font-weight:600;font-size:.8rem}
+td{padding:9px 14px;border:1px solid var(--border);color:var(--text-s)}
+tr:hover td{background:var(--bg-alt)}.check{color:var(--green);font-weight:600}
+.divider{height:1px;background:var(--border);margin:56px 0}
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0;padding:32px 20px 60px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+<div class="sidebar-logo">Understanding <span>SPD</span> → <span>VPD</span></div>
+<div class="sidebar-sub">Parameter decomposition with tensor shapes & intuition</div>
+<div class="toc-part">Part 1 — SPD</div>
+<a href="#part1" class="toc-link">Overview</a>
+<a href="#spd-s1" class="toc-link">1. Rank-1 Decomposition</a>
+<a href="#spd-s2" class="toc-link">2. Causal Importance</a>
+<a href="#spd-s3" class="toc-link">3. Stochastic Masking</a>
+<a href="#spd-s4" class="toc-link">4. Masked Forward Pass</a>
+<a href="#spd-s5" class="toc-link">5. Losses & Training</a>
+<div class="toc-part">Part 2 — The Gap</div>
+<a href="#part2" class="toc-link">Why SPD Is Not Enough</a>
+<div class="toc-part">Part 3 — VPD</div>
+<a href="#part3" class="toc-link">Overview</a>
+<a href="#vpd-simultaneous" class="toc-link">All 24 Matrices at Once</a>
+<a href="#vpd-steps12" class="toc-link">Steps 1–2</a>
+<a href="#vpd-s3" class="toc-link">3. Both Mask Types</a>
+<a href="#vpd-s3a" class="toc-link">3a. Adversarial Inner Loop</a>
+<a href="#vpd-s4" class="toc-link">4. Outer Training Loop</a>
+<a href="#vpd-s5" class="toc-link">5. All 5 Losses</a>
+<a href="#vpd-s6" class="toc-link">6. Backprop & Update</a>
+<div class="toc-part">Reference</div>
+<a href="#summary" class="toc-link">SPD vs VPD Table</a>
+</aside>
+<main class="main">
+<div class="page-header">
+<h1>Understanding <span>SPD</span> → <span>VPD</span></h1>
+<div class="subtitle">A step-by-step, tensor-shape-driven guide to Stochastic and adVersarial Parameter Decomposition.</div>
+<div class="meta">Based on Bushnaq et al. 2025 (SPD) and Bushnaq, Braun, Clive-Griffin et al. 2026 (VPD)</div>
+</div>
+<div id="part1"><div class="part-label">Part 1</div><h2>Stochastic Parameter Decomposition</h2>
+<p>We have a <strong>trained, frozen</strong> neural network. We want to understand what mechanisms its weight matrices implement. SPD breaks each weight matrix into simple rank-1 pieces, figures out which are needed per input, and verifies unused ones can be safely removed.</p>
+<div class="callout callout-accent"><h4>Running Example</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">Model:  1-layer residual MLP
+d_in  = 768       ← residual stream dimension
+d_mlp = 3072      ← MLP hidden dimension
+C     = 9728      ← subcomponents per matrix
+B     = 4         ← batch size
+
+Frozen weight matrices to decompose:
+  W_in:   (3072, 768)   — MLP up-projection
+  W_out:  (768, 3072)   — MLP down-projection</pre></div></div>
+
+<div id="spd-s1"><div class="step"><span class="step-n">1</span><h3>Decompose Each Weight Matrix into Rank-1 Subcomponents</h3></div>
+<p>Each weight matrix is written as a sum of outer products of two vectors:</p>
+<svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="30" width="90" height="150" rx="5" fill="#f9f6f0" stroke="#8a7a5a" stroke-width="1.5"/>
+<text x="55" y="22" text-anchor="middle" font-size="12" font-weight="600" fill="#8a7a5a">W_in</text>
+<text x="55" y="200" text-anchor="middle" font-size="9" fill="#8b8ba3">(3072, 768)</text>
+<text x="128" y="110" text-anchor="middle" fill="#8b8ba3" font-size="22">≈</text>
+<rect x="160" y="40" width="14" height="120" rx="2" fill="#3d8c5c" opacity="0.8"/>
+<text x="167" y="34" text-anchor="middle" font-size="9" fill="#3d8c5c">u₁</text>
+<text x="186" y="105" fill="#8b8ba3" font-size="12">⊗</text>
+<rect x="198" y="92" width="65" height="14" rx="2" fill="#4a6fa5" opacity="0.7"/>
+<text x="230" y="87" text-anchor="middle" font-size="9" fill="#4a6fa5">v₁ᵀ</text>
+<text x="282" y="105" fill="#8b8ba3" font-size="14">+</text>
+<rect x="304" y="40" width="14" height="120" rx="2" fill="#3d8c5c" opacity="0.6"/>
+<text x="311" y="34" text-anchor="middle" font-size="9" fill="#3d8c5c">u₂</text>
+<text x="330" y="105" fill="#8b8ba3" font-size="12">⊗</text>
+<rect x="342" y="92" width="65" height="14" rx="2" fill="#4a6fa5" opacity="0.5"/>
+<text x="374" y="87" text-anchor="middle" font-size="9" fill="#4a6fa5">v₂ᵀ</text>
+<text x="432" y="105" fill="#8b8ba3" font-size="14">+ · · · +</text>
+<rect x="510" y="40" width="14" height="120" rx="2" fill="#3d8c5c" opacity="0.35"/>
+<text x="517" y="34" text-anchor="middle" font-size="9" fill="#3d8c5c">u_C</text>
+<text x="536" y="105" fill="#8b8ba3" font-size="12">⊗</text>
+<rect x="548" y="92" width="65" height="14" rx="2" fill="#4a6fa5" opacity="0.35"/>
+<text x="580" y="87" text-anchor="middle" font-size="9" fill="#4a6fa5">v_Cᵀ</text>
+<text x="167" y="178" text-anchor="middle" font-size="8" fill="#3d8c5c">(3072,)</text>
+<text x="230" y="122" text-anchor="middle" font-size="8" fill="#4a6fa5">(768,)</text>
+<text x="660" y="105" font-size="10" fill="#8b8ba3">C = 9728</text>
+</svg>
+<p style="text-align:center;font-size:.82rem;color:var(--text-dim)">Each subcomponent: <span style="color:#3d8c5c">u_c</span> (writes) ⊗ <span style="color:#4a6fa5">v_c</span> (reads)</p>
+<pre>U_in:  <span class="s">(3072, 9728)</span>   — columns are u vectors (output side)
+V_in:  <span class="s">(9728, 768)</span>    — rows are v vectors (input/reading side)
+
+U_in @ V_in = (3072, 9728) @ (9728, 768) = (3072, 768) ≈ W_in</pre>
+<div class="callout callout-accent"><h4>Why C = 9728 > rank 768?</h4><p>The model may encode more mechanisms than it has dimensions — <em>superposition</em>. Extra subcomponents let us find those hidden mechanisms.</p></div></div>
+
+<div id="spd-s2"><div class="step"><span class="step-n">2</span><h3>Compute Causal Importance Values</h3></div>
+<p>For each input, which subcomponents actually matter?</p>
+<pre>x:    <span class="s">(B, 768)</span>       — input activation
+V_in: <span class="s">(9728, 768)</span>    — each row is a reading direction
+
+h = x @ V_in.T            → <span class="s">(B, 9728)</span>   "how much does input project onto v_c?"
+
+For each subcomponent c:
+  g[b,c] = hard_sigmoid( MLP_c( h[b,c] ) )
+
+g: <span class="s">(B, 9728)</span>              — causal importance ∈ [0, 1]</pre>
+<svg viewBox="0 0 620 70" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#b84040"/><stop offset="50%" style="stop-color:#a67c2e"/><stop offset="100%" style="stop-color:#3d8c5c"/></linearGradient></defs>
+<rect x="80" y="14" width="460" height="14" rx="7" fill="url(#gg)" opacity="0.55"/>
+<text x="80" y="10" font-size="9" fill="#b84040" font-weight="600">g = 0</text>
+<text x="300" y="10" text-anchor="middle" font-size="9" fill="#a67c2e" font-weight="600">g = 0.5</text>
+<text x="535" y="10" text-anchor="end" font-size="9" fill="#3d8c5c" font-weight="600">g = 1</text>
+<text x="80" y="48" font-size="8.5" fill="#b84040">Not needed — ablate freely</text>
+<text x="300" y="48" text-anchor="middle" font-size="8.5" fill="#a67c2e">Partially needed</text>
+<text x="540" y="48" text-anchor="end" font-size="8.5" fill="#3d8c5c">Critical — don't touch</text>
+</svg></div>
+
+<div id="spd-s3"><div class="step"><span class="step-n">3</span><h3>Stochastic Masking — The Core Trick</h3></div>
+<p>Randomly scale unimportant subcomponents and check if the output survives.</p>
+<pre>r:  <span class="s">(B, 9728)</span>  ~ Uniform(0, 1)
+m:  <span class="s">(B, 9728)</span>  = g + (1 − g) × r           — lives in [g, 1]</pre>
+<svg viewBox="0 0 640 130" xmlns="http://www.w3.org/2000/svg">
+<text x="30" y="16" font-size="9.5" font-weight="600" fill="#4a4a68">g = 0 (unimportant)</text>
+<rect x="30" y="24" width="220" height="14" rx="4" fill="#ebd9a8" opacity="0.4"/>
+<rect x="30" y="24" width="220" height="14" rx="4" fill="none" stroke="#a67c2e" stroke-width="1" opacity="0.5"/>
+<text x="30" y="54" font-size="8.5" fill="#a67c2e">mask range: [0, 1] — full freedom</text>
+<text x="320" y="16" font-size="9.5" font-weight="600" fill="#4a4a68">g = 0.7 (mostly important)</text>
+<rect x="320" y="24" width="220" height="14" rx="4" fill="#e5e7eb" opacity="0.3"/>
+<rect x="474" y="24" width="66" height="14" rx="4" fill="#ebd9a8" opacity="0.4"/>
+<rect x="474" y="24" width="66" height="14" rx="4" fill="none" stroke="#a67c2e" stroke-width="1" opacity="0.5"/>
+<text x="320" y="54" font-size="8.5" fill="#a67c2e">mask range: [0.7, 1] — limited wiggle</text>
+<text x="30" y="90" font-size="9.5" font-weight="600" fill="#4a4a68">g = 1 (critical)</text>
+<circle cx="250" cy="100" r="4" fill="#3d8c5c" opacity="0.7"/>
+<text x="262" y="104" font-size="8.5" fill="#3d8c5c">mask = 1 always — fully protected</text>
+</svg>
+<div class="callout callout-green"><h4>Why stochastic masking helps gradients</h4><p>Even with g = 0, the mask m is a random nonzero value. Gradients always flow. If the causal importance function is wrong, the reconstruction loss signals the error. Compare to APD's hard top-k: no selection → zero gradient → can never self-correct.</p></div></div>
+
+<div id="spd-s4"><div class="step"><span class="step-n">4</span><h3>Build Masked Weights & Forward Pass</h3></div>
+<pre>For each batch element b:
+  U_scaled = U_in × m[b]                  <span class="dim">— (3072, 9728) × (9728,)</span>
+  W'_in[b] = U_scaled @ V_in              <span class="dim">— (3072, 768)</span>
+
+Each subcomponent c contributes:  m[b,c] × (u_c ⊗ v_cᵀ)</pre>
+<div class="flow">
+<div class="fb">x <span class="s">(B,768)</span></div><span class="fa">→</span>
+<div class="fb hl">W'_in</div><span class="fa">→</span>
+<div class="fb">GELU</div><span class="fa">→</span>
+<div class="fb hl">W'_out</div><span class="fa">→</span>
+<div class="fb gl">y_masked</div>
+</div>
+<div class="flow" style="margin-top:4px">
+<div class="fb">x <span class="s">(B,768)</span></div><span class="fa">→</span>
+<div class="fb">W_in</div><span class="fa">→</span>
+<div class="fb">GELU</div><span class="fa">→</span>
+<div class="fb">W_out</div><span class="fa">→</span>
+<div class="fb gl">y_target</div>
+</div>
+<p style="text-align:center;font-size:.82rem;color:var(--text-dim)">Top: masked pass. Bottom: original. They should match.</p></div>
+
+<div id="spd-s5"><div class="step"><span class="step-n">5</span><h3>Losses & Training</h3></div>
+<pre>L_SPD = L_faithfulness                         <span class="dim">← MSE(U@V, W)</span>
+      + β₁ × L_stochastic_recon                 <span class="dim">← KL(y_target, y_masked)</span>
+      + β₂ × L_stochastic_recon_layerwise        <span class="dim">← mask one layer at a time</span>
+      + β₃ × L_importance_minimality             <span class="dim">← Σ|g|ᵖ (push g → 0)</span></pre>
+<svg viewBox="0 0 660 75" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="8" width="175" height="56" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+<text x="98" y="28" text-anchor="middle" font-size="9.5" font-weight="600" fill="#3d8c5c">L_recon</text>
+<text x="98" y="42" text-anchor="middle" font-size="8.5" fill="#3d8c5c">wants g = 1</text>
+<text x="98" y="55" text-anchor="middle" font-size="8" fill="#3d8c5c">"protect everything!"</text>
+<text x="225" y="42" fill="#a67c2e" font-size="13">⟵ tension ⟶</text>
+<text x="330" y="28" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a67c2e">EQUILIBRIUM</text>
+<text x="330" y="44" text-anchor="middle" font-size="8" fill="#a67c2e">g = 1 only where genuinely needed</text>
+<rect x="475" y="8" width="175" height="56" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+<text x="562" y="28" text-anchor="middle" font-size="9.5" font-weight="600" fill="#b84040">L_minimal</text>
+<text x="562" y="42" text-anchor="middle" font-size="8.5" fill="#b84040">wants g = 0</text>
+<text x="562" y="55" text-anchor="middle" font-size="8" fill="#b84040">"mark nothing important!"</text>
+</svg>
+<p><strong>Trainable:</strong> U, V, MLP weights. &nbsp;<strong>Frozen:</strong> original W.</p></div>
+
+<div class="divider"></div>
+<div id="part2"><div class="part-label">Part 2</div><h2>Why SPD Is Not Enough</h2>
+<p><strong>Ground truth:</strong> Subcomponent A adds +3 to an output logit. B adds −3. They cancel. Both are doing real work — g should be 1. But the causal importance function mistakenly set g_A = 0, g_B = 0.</p>
+<div class="callout callout-orange"><h4>Stochastic masking — moderate error, weak signal</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">Trial 1:  m_A = 0.6, m_B = 0.4
+          0.6×(+3) + 0.4×(−3) = +0.6     error: 0.6  (small)
+
+Trial 2:  m_A = 0.3, m_B = 0.7
+          0.3×(+3) + 0.7×(−3) = −1.2     error: 1.2  (moderate)
+
+On average: partial cancellation survives → moderate loss
+→ WEAK gradient signal → g stays near 0</pre></div>
+<div class="callout callout-red"><h4>The result: a false decomposition</h4>
+<p>It <strong>looks</strong> sparse and <strong>looks</strong> like it reconstructs okay, but it's <strong>wrong</strong> — hiding real mechanisms behind cancellation. The worst case (m_A=1, m_B=0 → error 3) is never sampled. We need to actively <em>search</em> for it.</p></div></div>
+
+<div class="divider"></div>
+<div id="part3"><div class="part-label">Part 3</div><h2>adVersarial Parameter Decomposition</h2>
+<p>VPD = SPD + three additions:</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0">
+<div class="fb rl" style="flex:1;min-width:160px">① Adversarial masking</div>
+<div class="fb hl" style="flex:1;min-width:160px">② Frequency-minimality loss</div>
+<div class="fb gl" style="flex:1;min-width:160px">③ Δ-components</div>
+</div>
+<div class="callout callout-accent"><h4>VPD Running Example</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">4-layer decoder-only transformer, 67M params
+d_model=768  d_mlp=3072  n_heads=6  d_head=128  T=512  vocab=50277
+C = 9728 subcomponents per matrix × 24 matrices total</pre></div>
+<div id="vpd-simultaneous">
+<div class="step"><span class="step-n">!</span><h3>Critical: All 24 Matrices Are Masked Simultaneously</h3></div>
+<p>This is easy to miss. When VPD does a masked forward pass (stochastic or adversarial), it doesn't mask one matrix at a time. <strong>All 24 weight matrices are replaced with their masked versions in the same single forward pass.</strong></p>
+<p>Each matrix is independently decomposed — its own U, V, Δ, its own 9728 subcomponents, its own causal importance MLPs and masks. Subcomponent 42 of W_Q in layer 0 has nothing to do with subcomponent 42 of W_K. But they all go into the <strong>same forward pass</strong>:</p>
+<pre>x = embed(tokens)
+
+<strong style="color:var(--warm)">Layer 0:</strong>
+  x = x + Attention(x, W'_Q0, W'_K0, W'_V0, W'_O0)   <span class="dim">← all 4 masked</span>
+  x = x + MLP(x, W'_in0, W'_out0)                      <span class="dim">← both masked</span>
+
+<strong style="color:var(--warm)">Layer 1:</strong>
+  x = x + Attention(x, W'_Q1, W'_K1, W'_V1, W'_O1)   <span class="dim">← all 4 masked</span>
+  x = x + MLP(x, W'_in1, W'_out1)                      <span class="dim">← both masked</span>
+
+<strong style="color:var(--warm)">Layers 2, 3:</strong> same
+
+logits = x @ W_unembed                                 <span class="dim">← NOT decomposed</span>
+y_masked: <span class="s">(B, T, vocab)</span></pre>
+<p>The reconstruction loss compares:</p>
+<pre>y_target:  original model, original weights    <span class="s">(B, T, vocab)</span>
+y_masked:  model with ALL 24 matrices masked   <span class="s">(B, T, vocab)</span>
+
+L_recon = KL(y_target, y_masked)</pre>
+<div class="callout callout-accent"><h4>Why this matters: end-to-end faithfulness</h4><p>VPD checks whether the decomposition preserves the model's <strong>final output behavior</strong>, not just intermediate activations at one layer. This is a key advantage over per-layer methods like transcoders, which only match activations layer by layer. A subcomponent in layer 0 might seem unimportant locally but matter for the final output — end-to-end masking catches this.</p>
+<p style="margin-top:8px;font-size:.85rem;color:var(--text-dim)">(Note: SPD had a layerwise loss variant. VPD dropped that and relies on full end-to-end masking.)</p></div>
+</div>
+
+<div id="vpd-steps12">
+<h3>Steps 1–2: Same as SPD, with Δ and sequence dim</h3>
+<p><strong>Step 1 — Decomposition with Δ:</strong></p>
+<pre>U: <span class="s">(3072, 9728)</span>   V: <span class="s">(9728, 768)</span>   Δ = W − U@V: <span class="s">(3072, 768)</span>
+W_effective = U@V + Δ = W    ← exact faithfulness by construction
+Δ: g = 0 always (no MLP), L2 penalty pushes Δ → 0</pre>
+<p><strong>Step 2 — Causal importance with sequence dim:</strong></p>
+<pre>x: <span class="s">(B, T, 768)</span>   V: <span class="s">(9728, 768)</span>
+h = x @ V.T         → <span class="s">(B, T, 9728)</span>
+g[b,t,c] = hard_sigmoid(MLP_c(h[b,t,c]))
+g: <span class="s">(B, T, 9728)</span>      ← per subcomponent, per token, per batch</pre>
+<div class="callout callout-accent"><h4>Per-token weight matrices</h4><p>Every (batch, position) pair gets its own masked W. Subcomponent c might matter for "is" but not "the".</p></div></div>
+
+<div id="vpd-s3"><div class="step"><span class="step-n">3</span><h3>Generate Both Mask Types</h3></div>
+<p><strong>Stochastic</strong> (same as SPD):</p>
+<pre>r_stoch: <span class="s">(B, T, 9728)</span>  ~ Uniform(0, 1)
+m_stoch: <span class="s">(B, T, 9728)</span>  = g + (1 − g) × r_stoch     — in [g, 1]</pre>
+<p><strong>Adversarial</strong> (new — gradient ascent on masks):</p>
+<pre>m_adv: <span class="s">(B, T, 9728)</span>   initialized in [g, 1]
+
+for step in range(20):
+    Forward pass with m_adv → y_adv     <span class="dim">← see Step 3a</span>
+    loss = KL(y_target, y_adv)
+    grad = d(loss) / d(m_adv)           <span class="dim">← masks ONLY</span>
+    m_adv += lr × grad                  <span class="dim">← ASCENT (maximize damage)</span>
+    m_adv = clamp(m_adv, min=g, max=1)</pre>
+<div class="callout callout-red"><h4>Adversarial catches what stochastic misses</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">A adds +3 (g=0), B adds −3 (g=0)
+
+Adversarial finds: m_A → 1.0, m_B → 0.0
+  1.0×(+3) + 0.0×(−3) = +3    error: 3 ← HUGE
+→ strong gradient → g_A, g_B pushed to 1.0 ✓</pre></div>
+<div class="callout callout-green"><h4>Why lowering g doesn't help</h4><p>g is the <em>floor</em>, 1 is the ceiling. Adversary uses the ceiling for m_A — lowering g_A changes nothing. Adversary uses the floor for m_B — only <em>raising</em> g_B restricts it. The only escape is to correctly raise g.</p></div></div>
+
+<div id="vpd-s3a"><div class="step"><span class="step-n">3a</span><h3>Adversarial Inner Loop — Full Forward Pass</h3></div>
+<p>Inside each adversarial step, a complete transformer forward pass occurs:</p>
+<pre><strong style="color:var(--red)">Building masked weights</strong> (per matrix, per position):
+
+m_adv_in[b,t]: <span class="s">(9728,)</span>       U_in: <span class="s">(3072, 9728)</span>
+V_in:          <span class="s">(9728, 768)</span>    Δ_in: <span class="s">(3072, 768)</span>
+
+U_scaled    = U_in × m_adv_in[b,t]      <span class="dim">— (3072, 9728) × (9728,)</span>
+W'_in[b,t]  = U_scaled @ V_in           <span class="dim">— (3072, 768)</span>
+              + Δ_in × m_delta[b,t]      <span class="dim">— (3072, 768)</span></pre>
+<p class="dim" style="font-size:.85rem">↑ Repeated for all 24 weight matrices.</p>
+<pre><strong style="color:var(--warm)">Full transformer forward pass:</strong>
+
+tokens      <span class="s">(B, T)</span> → embeddings <span class="s">(B, T, 768)</span>
+
+Layer 0 Attention:
+  q = x @ W'_Q[b,t].T    k = x @ W'_K[b,t].T    v = x @ W'_V[b,t].T
+  attn_out = attention(q,k,v) @ W'_O[b,t].T        <span class="s">(B, T, 768)</span>
+  x = x + attn_out
+
+Layer 0 MLP:
+  hidden    = x @ W'_in[b,t].T                      <span class="s">(B, T, 3072)</span>
+  activated = GELU(hidden)
+  mlp_out   = activated @ W'_out[b,t].T              <span class="s">(B, T, 768)</span>
+  x = x + mlp_out
+
+Layers 1, 2, 3: same
+
+logits → y_adv: <span class="s">(B, T, vocab)</span></pre>
+<pre><strong style="color:var(--red)">Update masks only:</strong>
+
+loss = KL(y_target, y_adv)
+grad = d(loss) / d(m_adv)    <span class="dim">← (B, T, 9728) per matrix</span>
+m_adv += lr × grad            <span class="dim">← gradient ASCENT</span>
+m_adv = clamp(m_adv, min=g, max=1)
+
+<strong style="color:var(--red)">ONLY m_adv changes. U, V, Δ, MLPs — all frozen.</strong></pre></div>
+
+<div id="vpd-s4"><div class="step"><span class="step-n">4</span><h3>Outer Training Loop — Two Forward Passes</h3></div>
+<p>Two <strong>separate</strong> forward passes (never mixed):</p>
+<div class="callout callout-orange"><h4>Forward Pass A — Stochastic masks</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">For all 24 matrices: W'_l = U_l × m_stoch_l[b,t] @ V_l + Δ_l × m_delta_stoch
+Full transformer → y_stoch: (B, T, vocab)</pre></div>
+<div class="callout callout-red"><h4>Forward Pass B — Adversarial masks (worst-case from Step 3)</h4>
+<pre style="background:transparent;border:none;padding:0;margin:4px 0">For all 24 matrices: W'_l = U_l × m_adv_l[b,t] @ V_l + Δ_l × m_delta_adv
+Full transformer → y_adv: (B, T, vocab)</pre></div></div>
+
+<div id="vpd-s5"><div class="step"><span class="step-n">5</span><h3>All 5 Losses</h3></div>
+<pre style="line-height:2.2"><strong style="color:var(--red)">L1</strong> = β₁ × KL(y_target, y_adv)              <span class="dim">← adversarial recon</span>
+<strong style="color:var(--orange)">L2</strong> = β₂ × KL(y_target, y_stoch)            <span class="dim">← stochastic recon</span>
+<strong style="color:var(--blue)">L3</strong> = β₃ × (1/BT) Σ|g|ᵖ                    <span class="dim">← importance minimality</span>
+<strong style="color:var(--warm)">L4</strong> = β₄ × (1/BT) Σ|g|ᵖ·log₂(1+freq)      <span class="dim">← frequency minimality</span>
+<strong style="color:var(--green)">L5</strong> = β₅ × Σ‖W − U@V‖²                    <span class="dim">← delta L2</span>
+
+L_VPD = L1 + L2 + L3 + L4 + L5</pre></div>
+
+<div id="vpd-s6"><div class="step"><span class="step-n">6</span><h3>Backprop & Update</h3></div>
+<pre>Gradient DESCENT on L_VPD updates:
+  ✓  U_l, V_l for all 24 matrices         <span class="dim">← subcomponent vectors</span>
+  ✓  MLP weights for all subcomponents     <span class="dim">← causal importance predictors</span>
+
+Does NOT update:
+  ✗  Original weights W_l                  <span class="dim">← frozen target</span>
+  ✗  Δ_l = W_l − U_l@V_l                  <span class="dim">← derived</span>
+  ✗  m_adv                                 <span class="dim">← inner search only</span></pre>
+<svg viewBox="0 0 660 70" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="6" width="175" height="56" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+<text x="98" y="24" text-anchor="middle" font-size="9.5" font-weight="600" fill="#3d8c5c">RECON PRESSURE</text>
+<text x="98" y="38" text-anchor="middle" font-size="8.5" fill="#3d8c5c">L_adv + L_stoch → g HIGH</text>
+<text x="225" y="38" fill="#a67c2e" font-size="13">⟵ tension ⟶</text>
+<text x="330" y="24" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a67c2e">EQUILIBRIUM</text>
+<text x="330" y="40" text-anchor="middle" font-size="8" fill="#a67c2e">g ≈ 1 only where genuinely needed</text>
+<rect x="475" y="6" width="175" height="56" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+<text x="562" y="24" text-anchor="middle" font-size="9.5" font-weight="600" fill="#b84040">SPARSITY PRESSURE</text>
+<text x="562" y="38" text-anchor="middle" font-size="8.5" fill="#b84040">L_imp + L_freq → g LOW</text>
+</svg></div>
+
+<div class="divider"></div>
+<div id="summary"><div class="part-label">Reference</div><h2>SPD vs VPD</h2>
+<table>
+<tr><th>Aspect</th><th>SPD</th><th>VPD</th></tr>
+<tr><td>Subcomponents</td><td>Rank-1 per matrix</td><td>Same</td></tr>
+<tr><td>Causal importance</td><td>Learned MLP, per batch</td><td>Same + per token position</td></tr>
+<tr><td>Stochastic masking</td><td>✓ (only type)</td><td>✓ (one of two)</td></tr>
+<tr><td>Adversarial masking</td><td>✗</td><td class="check">✓ catches cancellations</td></tr>
+<tr><td>Faithfulness</td><td>MSE: U@V ≈ W</td><td class="check">Δ = W−U@V (exact) + L2</td></tr>
+<tr><td>Importance penalty</td><td>Σ|g|ᵖ</td><td>Same</td></tr>
+<tr><td>Frequency penalty</td><td>✗</td><td class="check">✓ Σ|g|ᵖ·log(1+freq)</td></tr>
+<tr><td>Tested on</td><td>Toy models</td><td class="check">67M param transformer</td></tr>
+<tr><td>Feature splitting</td><td>Claimed absent</td><td class="check">Empirically confirmed</td></tr>
+</table>
+<div class="callout callout-accent" style="margin-top:32px"><h4>Core idea in one sentence</h4><p>Decompose weight matrices into simple rank-1 pieces, learn which each input needs, verify by randomly <em>and adversarially</em> removing "unneeded" pieces to ensure the output survives.</p></div></div>
+<div style="text-align:center;padding:56px 0 32px;color:var(--text-dim);font-size:.82rem">
+Reference guide — SPD (Bushnaq et al. 2025) · VPD (Bushnaq, Braun, Clive-Griffin et al. 2026)
+</div>
+</main>
+</div>
+<script>
+const links=document.querySelectorAll('.toc-link'),sections=[];
+links.forEach(l=>{const id=l.getAttribute('href').slice(1),el=document.getElementById(id);if(el)sections.push({el,link:l})});
+function onScroll(){let c=sections[0];for(const s of sections)if(s.el.getBoundingClientRect().top<=120)c=s;links.forEach(l=>l.classList.remove('active'));if(c)c.link.classList.add('active')}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>
+</body>
+</html>
