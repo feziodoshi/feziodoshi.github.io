@@ -9,17 +9,15 @@ redirect_from:
 
 Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). Currently, I'm a Research Fellow at <a href="https://www.goodfire.ai/">Goodfire <img src="/images/goodfire_logo.png" alt="Goodfire" width="20" style="vertical-align: middle;"></a>.
  
-
-Broadly, I study how the human visual system transforms raw sensory input into structured, meaningful representations and how we can uncover similar mechanisms inside large-scale vision models. 
-
+ 
 
 <!-- For a brief overview of my research, see short feature articles [here](https://gsas.harvard.edu/news/seeing-how-we-see) and [here](https://kempnerinstitute.harvard.edu/news/ai-vision-models-can-mimic-a-key-step-in-how-the-human-brain-perceives-shapes/). -->
 
 <!-- in the [Vision Sciences Lab](https://visionlab.harvard.edu) and [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu/#) -->
 
 <blockquote class="hover-bridge">
-  My work bridges <strong><em>cognitive science, computational vision, and interpretability</em></strong> 
-  to understand object perception in humans and artificial systems: how local elements are organized and grouped into proto-objects, how information flows through long-range interactions, and how holistic global shape ultimately emerges.
+  Broadly, I study how the human visual system transforms raw sensory input into structured, meaningful representations and how we can uncover similar mechanisms inside large-scale vision models. My work bridges <strong><em>cognitive science, computational vision, and interpretability</em></strong> 
+  to understand object perception: how local elements are organized and grouped into proto-objects, how information flows through long-range interactions, and how holistic global shape ultimately emerges.
 </blockquote>
 
 * **On the cognitive and computational side,** I study whether self-supervised learning and vision-language alignment provide the inductive biases to learn holistic shape and human-like sensitivity to configural relations between object parts.
