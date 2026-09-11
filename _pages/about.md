@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). Currently, I'm a Research Fellow at <a href="https://www.goodfire.ai/">Goodfire <img src="/images/goodfire_logo.png" alt="Goodfire" width="20" style="vertical-align: middle;"></a>.
+Hi, I am a Ph.D. candidate in the Dept. of Psychology at Harvard University, advised by [Prof. George Alvarez](https://visionlab.harvard.edu/george/bio) and [Prof. Talia Konkle](https://konklab.fas.harvard.edu/#). I am grateful to be supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural and Artificial Vision](https://kempnerinstitute.harvard.edu/). In Summer 2026, I was a Research Fellow at <a href="https://www.goodfire.ai/">Goodfire <img src="/images/goodfire_logo.png" alt="Goodfire" width="20" style="vertical-align: middle;"></a>.
+
+<!-- Currently, I'm a Research Fellow at <a href="https://www.goodfire.ai/">Goodfire <img src="/images/goodfire_logo.png" alt="Goodfire" width="20" style="vertical-align: middle;"></a>. -->
  
  
 
